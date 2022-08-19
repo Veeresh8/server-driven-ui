@@ -4,12 +4,12 @@ import kotlinx.serialization.SerialName
 
 @kotlinx.serialization.Serializable
 data class PostResponse(
-    val count: Int?,
-    val next: String?,
-    val previous: String?,
+    val count: Int? = null,
+    val next: String? = null,
+    val previous: String? = null,
 
     @SerialName("results")
-    val posts: List<Post>?
+    val posts: List<Post>? = null
 ) {
     @kotlinx.serialization.Serializable
     data class Post(
@@ -17,21 +17,21 @@ data class PostResponse(
         val postID: Int = -1,
 
         @SerialName("title")
-        val title: String?,
+        val title: String? = null,
 
         @SerialName("content")
-        val content: String?,
+        val content: String? = null,
 
         @SerialName("images")
-        val images: List<PostImage>?
+        val images: List<PostImage>? = null
     ) {
         @kotlinx.serialization.Serializable
         data class PostImage(
             @SerialName("image")
-            val image: String?,
+            val image: String? = null,
 
             @SerialName("thumb_url")
-            val thumbnailURL: String?,
+            val thumbnailURL: String? = null,
         )
     }
 }
@@ -39,7 +39,7 @@ data class PostResponse(
 @kotlinx.serialization.Serializable
 data class AdResponse(
     @SerialName("results")
-    val adsList: List<Advert>?
+    val adsList: List<Advert>? = null
 ) {
     @kotlinx.serialization.Serializable
     data class Advert(
@@ -47,12 +47,12 @@ data class AdResponse(
         val id: Int = -1,
 
         @SerialName("creatives")
-        val creatives: List<AdCreative>?,
+        val creatives: List<AdCreative>? = null,
     ) {
         @kotlinx.serialization.Serializable
         data class AdCreative(
             @SerialName("thumb_url")
-            val thumbnailURL: String?,
+            val thumbnailURL: String? = null,
         )
     }
 }
