@@ -1,17 +1,17 @@
 package com.droid.lokalplayground
 
+import com.droid.lokalplayground.feed.AdsAPIService
+import com.droid.lokalplayground.feed.FeedUseCase
+import com.droid.lokalplayground.feed.LokalAPIService
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import kotlinx.coroutines.ExperimentalCoroutinesApi
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.test.runTest
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
-import okhttp3.mockwebserver.Dispatcher
 import okhttp3.mockwebserver.MockResponse
 import okhttp3.mockwebserver.MockWebServer
-import okhttp3.mockwebserver.RecordedRequest
 import org.junit.After
 import org.junit.Assert.assertTrue
 import org.junit.Before
@@ -20,7 +20,7 @@ import retrofit2.Retrofit
 
 
 @OptIn(ExperimentalCoroutinesApi::class)
-class FeedUseCaseTest {
+class PostsUseCaseTest {
 
     private lateinit var mockWebServer: MockWebServer
 
@@ -101,7 +101,22 @@ class FeedUseCaseTest {
         mockWebServer.enqueue(response)
 
         val result = feedUseCase.fetchPosts()
-
         assertTrue(result is Result.Error)
     }
+
+    @Test
+    fun `check successful response for posts`() = runTest {
+        val response = MockResponse()
+            .setBody(Fake.buildFakePosts())
+            .setResponseCode(200)
+
+        mockWebServer.enqueue(response)
+
+        val result = feedUseCase.fetchPosts()
+        assertTrue(result is Result.Success)
+        assertTrue((result as Result.Success).data.posts?.last()?.title == "test image quality 9")
+    }
+
+    // =================== ADVERTS ======================
+
 }

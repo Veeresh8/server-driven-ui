@@ -1,4 +1,4 @@
-package com.droid.lokalplayground
+package com.droid.lokalplayground.feed
 
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -15,5 +15,5 @@ interface LokalAPIService {
         @Query("classifieds_nudge") category_nudge_pos: Int = -1,
         @Query("config") config: String = "",
         @Query("microlocation_id") microlocation_id: String = ""
-    ): PostResponse
+    ): Unit
 }

@@ -1,5 +1,8 @@
-package com.droid.lokalplayground
+package com.droid.lokalplayground.di
 
+import com.droid.lokalplayground.feed.AdsAPIService
+import com.droid.lokalplayground.feed.LokalAPIService
+import com.droid.lokalplayground.posts.*
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides
@@ -10,12 +13,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
+import kotlinx.serialization.modules.SerializersModule
+import kotlinx.serialization.modules.polymorphic
 import okhttp3.Interceptor
 import okhttp3.MediaType
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
-import retrofit2.CallAdapter
 import retrofit2.Retrofit
 import javax.inject.Qualifier
 import javax.inject.Singleton
@@ -60,13 +64,14 @@ object NetworkModule {
                 chain.request().newBuilder()
                     .header("Accept-Language", "te")
                     .header("Day-Count", "0")
-                    .header("Authorization", "Token 82b0ab73a2f6d7f529867a163ec777fdeb7f8d0b")
+                    .header("Authorization", "Token e4e25e1cdb6cd2bb2f5c098cc2b8052cfdc46fcd")
                     .build()
             chain.proceed(request)
         }
     }
 
     @Provides
+    @Type.LokalSerializer
     @Singleton
     fun providesJsonSerializer(): Json {
         return Json {
@@ -77,25 +82,47 @@ object NetworkModule {
         }
     }
 
+    @Provides
+    @Type.PostSerializer
+    @Singleton
+    fun providesPostJsonSerializer(): Json {
+        val modules = SerializersModule {
+            polymorphic(Post::class) {
+                subclass(Article::class, Article.serializer())
+                subclass(Video::class, Video.serializer())
+                subclass(Advert::class, Advert.serializer())
+                subclass(JobPost::class, JobPost.serializer())
+            }
+        }
+
+        return Json {
+            serializersModule = modules
+            ignoreUnknownKeys = true
+            prettyPrint = true
+            isLenient = true
+            explicitNulls = false
+        }
+    }
+
     @Type.LokalRetrofit
     @Provides
     @Singleton
-    fun providesLokalRetrofit(okHttpClient: OkHttpClient, json: Json, contentType: MediaType): Retrofit {
+    fun providesLokalRetrofit(okHttpClient: OkHttpClient, @Type.LokalSerializer json: Json, contentType: MediaType): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
             .addConverterFactory(json.asConverterFactory(contentType))
-            .baseUrl("http://testapi.getlokalapp.com/")
+            .baseUrl("https://api.getlokalapp.com/")
             .build()
     }
 
     @Type.LokalAdsRetrofit
     @Provides
     @Singleton
-    fun providesLokalAdRetrofit(okHttpClient: OkHttpClient, json: Json, contentType: MediaType): Retrofit {
+    fun providesLokalAdRetrofit(okHttpClient: OkHttpClient, @Type.LokalSerializer json: Json, contentType: MediaType): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
             .addConverterFactory(json.asConverterFactory(contentType))
-            .baseUrl("http://testads.getlokalapp.com/")
+            .baseUrl("http://ads.getlokalapp.com/")
             .build()
     }
 
@@ -130,5 +157,13 @@ class Type {
     @Qualifier
     @Retention(AnnotationRetention.BINARY)
     annotation class LokalAPIService
+
+    @Qualifier
+    @Retention(AnnotationRetention.BINARY)
+    annotation class PostSerializer
+
+    @Qualifier
+    @Retention(AnnotationRetention.BINARY)
+    annotation class LokalSerializer
 }
 

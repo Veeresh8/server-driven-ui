@@ -1,4 +1,4 @@
-package com.droid.lokalplayground
+package com.droid.lokalplayground.feed
 
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -11,5 +11,5 @@ interface AdsAPIService {
         @Query("category_id") category_id: String = "",
         @Query("location_id") location_id: String = "",
         @Query("micro_location_id") micro_location_id: String = ""
-    ): AdResponse
+    ): Unit
 }

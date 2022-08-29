@@ -1,4 +1,4 @@
-package com.droid.lokalplayground
+package com.droid.lokalplayground.feed
 
 data class FeedPayload(
     val cursor: String,

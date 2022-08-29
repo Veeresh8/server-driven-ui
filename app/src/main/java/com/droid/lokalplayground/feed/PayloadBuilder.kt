@@ -1,11 +1,11 @@
-package com.droid.lokalplayground
+package com.droid.lokalplayground.feed
 
 object PayloadBuilder {
 
     fun buildFeedPayload(): FeedPayload {
         return FeedPayload(
             cursor = "",
-            locationID = "9",
+            locationID = "626",
             categoryID = "1",
             postType = "all",
             tagID = "",
@@ -19,7 +19,7 @@ object PayloadBuilder {
         return AdPayload(
             placementType = 2,
             categoryID = "1",
-            locationID = "9",
+            locationID = "626",
             microLocationID = "-1"
         )
     }

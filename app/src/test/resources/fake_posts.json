@@ -1,0 +1,2827 @@
+{
+  "results": [
+    {
+      "type": 7,
+      "title": "telugu title tags block 0-2 days",
+      "tags": [
+        {
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/9a/f3/9af3a93bca2ccd0ee9a4f1c311418c5f.jpg",
+          "title": "#టమాటా",
+          "id": 1,
+          "type": 1,
+          "english_name": "tomatoes"
+        },
+        {
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/cc/be/ccbe66bccbad373dd7b4d49f364a48c8.jpg",
+          "title": "ఎన్నికల",
+          "id": 2,
+          "type": 1,
+          "english_name": "elections"
+        },
+        {
+          "thumb_url": null,
+          "title": "పరీక్ష",
+          "id": 4,
+          "type": 1,
+          "english_name": "Test"
+        },
+        {
+          "thumb_url": null,
+          "title": "warangal constituency ",
+          "id": 5,
+          "type": 4,
+          "english_name": "warangal constituency"
+        },
+        {
+          "thumb_url": null,
+          "title": "హాష్ టాగ్ ",
+          "id": 76,
+          "type": 1,
+          "english_name": "hashtag"
+        },
+        {
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/cd/9e/cd9e1c121d2d4ee421dd1ddbe9cf29c4.jpg",
+          "title": "🔥 astrology category",
+          "id": 3,
+          "type": 2,
+          "english_name": "popular"
+        }
+      ],
+      "content": "",
+      "categories": [],
+      "images": [],
+      "videos": [],
+      "updated_on": "2022-08-17T14:35:59.988813+05:30",
+      "collapsed_tag_count": 3,
+      "id": -301
+    },
+    {
+      "type": 7,
+      "title": "test tags block",
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "nalgonda constituency",
+          "id": 105,
+          "type": 4,
+          "english_name": "nalgonda constituency"
+        },
+        {
+          "thumb_url": null,
+          "title": "guntur constituency",
+          "id": 106,
+          "type": 4,
+          "english_name": "guntur constituency"
+        },
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        },
+        {
+          "thumb_url": null,
+          "title": "Nagarjuna's special program",
+          "id": 102,
+          "type": 6,
+          "english_name": "nagarjunaspecialprogram"
+        }
+      ],
+      "content": "",
+      "categories": [],
+      "images": [],
+      "videos": [],
+      "updated_on": "2022-08-17T14:35:59.988813+05:30",
+      "collapsed_tag_count": 5,
+      "id": -302
+    },
+    {
+      "type": 7,
+      "title": "test tags block",
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "nalgonda constituency",
+          "id": 105,
+          "type": 4,
+          "english_name": "nalgonda constituency"
+        },
+        {
+          "thumb_url": null,
+          "title": "guntur constituency",
+          "id": 106,
+          "type": 4,
+          "english_name": "guntur constituency"
+        },
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        },
+        {
+          "thumb_url": null,
+          "title": "Nagarjuna's special program",
+          "id": 102,
+          "type": 6,
+          "english_name": "nagarjunaspecialprogram"
+        }
+      ],
+      "content": "",
+      "categories": [],
+      "images": [],
+      "videos": [],
+      "updated_on": "2022-08-17T14:35:59.988813+05:30",
+      "collapsed_tag_count": 5,
+      "id": -302
+    },
+    {
+      "id": -803,
+      "title": "Voice of the people",
+      "icon": "https://media.getlokalapp.com/media/images/voice_of_people.svg",
+      "type": 24,
+      "vops": [
+        {
+          "id": 31,
+          "post": {
+            "id": 12703,
+            "type": 2,
+            "title": "Android",
+            "slug": "android-test",
+            "keywords": "",
+            "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+            "locations": [
+              {
+                "id": 9,
+                "title": "వరంగల్  Warangal",
+                "short_name": "warangal",
+                "type": 1,
+                "locale": [
+                  "te"
+                ],
+                "state": 4,
+                "state_obj": {
+                  "id": 4,
+                  "title": "తెలంగాణ TE",
+                  "short_name": "telangana",
+                  "locale": [
+                    "te"
+                  ],
+                  "type": 2,
+                  "state": null,
+                  "state_obj": {}
+                }
+              }
+            ],
+            "categories": [
+              {
+                "id": 1,
+                "name": "లోకల్ వార్తలు",
+                "english_name": "lokal",
+                "image": null
+              }
+            ],
+            "ugc_categories": [],
+            "tags": [],
+            "updated_on": "2022-07-13T13:57:24.535457+05:30",
+            "author": "Android testing",
+            "reporter": {
+              "name": "Android testing",
+              "verified": false,
+              "thumb_url": null
+            },
+            "sub_reporters": [],
+            "images": [
+              {
+                "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/12703/12703_Sample-PNG-Image.png",
+                "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/41/98/41989893c6e1dec300688b923d35f8d9.jpg",
+                "caption": null,
+                "height": 409,
+                "width": 864
+              }
+            ],
+            "videos": [],
+            "is_active": true,
+            "created_on": "2022-07-13T14:00:46.541126+05:30",
+            "is_liked": 0,
+            "likes": 5,
+            "dislikes": 0,
+            "shares": 15,
+            "fb_shares": 31,
+            "views": 264,
+            "num_comments": 3,
+            "video_processed": false,
+            "submit": {
+              "is_user_submitted": false,
+              "message": ""
+            },
+            "collapse": false,
+            "info_post_config": 0,
+            "custom_link": null,
+            "button_text": null,
+            "is_premium": false
+          },
+          "poll": {
+            "id": 121,
+            "title": "Recyclerview",
+            "type": 9,
+            "subtype": 1,
+            "is_ended": false,
+            "is_voted": 0,
+            "end_time": "2022-07-15T13:54:53+05:30",
+            "updated_on": "2022-07-13T13:54:53+05:30",
+            "options": [
+              {
+                "id": 148,
+                "title": "ANURAG",
+                "thumb_url": null,
+                "num_votes": 1,
+                "is_correct": false,
+                "poll": 121
+              },
+              {
+                "id": 149,
+                "title": "FENIL",
+                "thumb_url": null,
+                "num_votes": 0,
+                "is_correct": false,
+                "poll": 121
+              }
+            ],
+            "total_votes": 1
+          },
+          "reactions": {
+            "fb_shares": 3,
+            "num_fb_shares": 0,
+            "shares": 29,
+            "num_shares": 27,
+            "num_likes": 3,
+            "num_comments": 0
+          },
+          "success_story": "",
+          "is_liked": 0,
+          "type": 26
+        },
+        {
+          "id": 27,
+          "post": {
+            "id": 12696,
+            "type": 2,
+            "title": "Voices of People",
+            "slug": "voices-of-people",
+            "keywords": "",
+            "content": "hello hi hello",
+            "locations": [
+              {
+                "id": 9,
+                "title": "వరంగల్  Warangal",
+                "short_name": "warangal",
+                "type": 1,
+                "locale": [
+                  "te"
+                ],
+                "state": 4,
+                "state_obj": {
+                  "id": 4,
+                  "title": "తెలంగాణ TE",
+                  "short_name": "telangana",
+                  "locale": [
+                    "te"
+                  ],
+                  "type": 2,
+                  "state": null,
+                  "state_obj": {}
+                }
+              }
+            ],
+            "categories": [
+              {
+                "id": 97,
+                "name": "Voice Of people",
+                "english_name": "Voice Of People",
+                "image": null
+              }
+            ],
+            "ugc_categories": [],
+            "tags": [],
+            "updated_on": "2022-07-08T16:50:05.583298+05:30",
+            "author": "test daivansh",
+            "reporter": {
+              "id": 4865503,
+              "name": "test daivansh",
+              "verified": true,
+              "thumb_url": null
+            },
+            "sub_reporters": [],
+            "images": [],
+            "videos": [],
+            "is_active": true,
+            "created_on": "2022-07-08T16:51:00.921852+05:30",
+            "is_liked": 0,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 46,
+            "fb_shares": 23,
+            "views": 78,
+            "num_comments": 5,
+            "video_processed": false,
+            "submit": {
+              "is_user_submitted": true,
+              "message": "test daivansh writes news for Lokal. You can join him to be the voice of your town"
+            },
+            "collapse": false,
+            "info_post_config": 0,
+            "custom_link": null,
+            "button_text": null,
+            "is_premium": false
+          },
+          "poll": {
+            "id": 44,
+            "title": "test poll with image option",
+            "type": 9,
+            "subtype": 1,
+            "is_ended": false,
+            "is_voted": 0,
+            "end_time": "2022-07-13T18:17:28+05:30",
+            "updated_on": "2019-04-26T19:30:28+05:30",
+            "options": [
+              {
+                "id": 54,
+                "title": "1-1",
+                "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/de/c8/dec85db73421f891ee3ba7dbb99bd2d5.jpg",
+                "num_votes": 5,
+                "is_correct": false,
+                "poll": 44
+              },
+              {
+                "id": 55,
+                "title": "2",
+                "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/ea/9f/ea9f60bffc79da66113499759363cf8e.jpg",
+                "num_votes": 3,
+                "is_correct": false,
+                "poll": 44
+              }
+            ],
+            "total_votes": 8
+          },
+          "reactions": {
+            "fb_shares": 2,
+            "num_fb_shares": 0,
+            "shares": 19,
+            "num_shares": 16,
+            "num_likes": 3,
+            "num_comments": 0
+          },
+          "success_story": "",
+          "is_liked": 0,
+          "type": 26
+        },
+        {
+          "id": 1,
+          "post": {
+            "id": 12598,
+            "type": 2,
+            "title": "QA 2 test post",
+            "slug": "qa-2-test-post",
+            "keywords": "",
+            "content": "test post for resubmit QA team sgehdj dhdudjdh dbdjjdbd https: //getlokalapp. atlassian. net/projects/LT? selectedItem=com. atlassian. plugins. atlassian-connect-plugin: com. kanoah. test-manager__main-project-page#! /testCase/LT-T845",
+            "locations": [
+              {
+                "id": 9,
+                "title": "వరంగల్  Warangal",
+                "short_name": "warangal",
+                "type": 1,
+                "locale": [
+                  "te"
+                ],
+                "state": 4,
+                "state_obj": {
+                  "id": 4,
+                  "title": "తెలంగాణ TE",
+                  "short_name": "telangana",
+                  "locale": [
+                    "te"
+                  ],
+                  "type": 2,
+                  "state": null,
+                  "state_obj": {}
+                }
+              }
+            ],
+            "categories": [
+              {
+                "id": 97,
+                "name": "Voice Of people",
+                "english_name": "Voice Of People",
+                "image": null
+              }
+            ],
+            "ugc_categories": [],
+            "tags": [],
+            "updated_on": "2022-07-01T12:28:01.401804+05:30",
+            "author": "test daivansh",
+            "reporter": {
+              "id": 4865503,
+              "name": "test daivansh",
+              "verified": true,
+              "thumb_url": null
+            },
+            "sub_reporters": [],
+            "images": [
+              {
+                "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7751/11623_90068.jpg",
+                "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/4d/c0/4dc0cd64278f3ddfd24fabaae4c433ca.jpg",
+                "caption": null,
+                "height": 768,
+                "width": 1024
+              }
+            ],
+            "videos": [],
+            "is_active": true,
+            "created_on": "2022-05-05T18:28:26.994098+05:30",
+            "is_liked": 0,
+            "likes": 0,
+            "dislikes": 0,
+            "shares": 12,
+            "fb_shares": 21,
+            "views": 83,
+            "num_comments": 2,
+            "video_processed": false,
+            "submit": {
+              "is_user_submitted": true,
+              "message": "test daivansh writes news for Lokal. You can join him to be the voice of your town"
+            },
+            "collapse": false,
+            "info_post_config": 0,
+            "custom_link": null,
+            "button_text": null,
+            "is_premium": false
+          },
+          "poll": {
+            "id": 2,
+            "title": "App event optimisation through facebook ads, slowing down the app. How to find the root issue?",
+            "type": 9,
+            "subtype": 1,
+            "is_ended": false,
+            "is_voted": 0,
+            "end_time": "2022-07-13T17:11:45+05:30",
+            "updated_on": "2019-03-21T02:54:24+05:30",
+            "options": [
+              {
+                "id": 5,
+                "title": "Option1",
+                "thumb_url": null,
+                "num_votes": 7,
+                "is_correct": false,
+                "poll": 2
+              },
+              {
+                "id": 6,
+                "title": "option2",
+                "thumb_url": null,
+                "num_votes": 2,
+                "is_correct": false,
+                "poll": 2
+              }
+            ],
+            "total_votes": 9
+          },
+          "reactions": {
+            "fb_shares": 2,
+            "num_fb_shares": 0,
+            "shares": 13,
+            "num_shares": 11,
+            "num_likes": 3,
+            "num_comments": 0
+          },
+          "success_story": "",
+          "is_liked": 0,
+          "type": 26
+        },
+        {
+          "id": -803,
+          "type": 29
+        }
+      ],
+      "updated_on": "2022-08-17T14:35:59.988813+05:30"
+    },
+    {
+      "id": 12713,
+      "type": 11,
+      "title": "updated buttons",
+      "slug": "test-analytics",
+      "keywords": "",
+      "content": "<style>\ntable { border-collapse: collapse; width:100%; font-family: 'Ramabhadra', 'Mallanna', sans-serif; font-size:14px}\nth { text-align: left}\ntr:not(:last-child) { border-bottom: 1.5px solid #ccc;}\na { text-decoration: none; color: #1b7ad2}\ntd, th { padding-bottom: 0.25em; padding-top: 0.25em}\n</style>\n<p>\r\n<script>\r\n         function extURL(){try { Android.executeAction(\"external_url\",\"https://www.getlokalapp.com\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction uriButton(){try {Android.executeAction(\"internal_url\", \"lokal://getlokalapp.com/share/posts/12686\"); } catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction cb(){try {Android.clickCall(\"9999988888\")}catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction ab(){try {Android.executeAction(\"execute_action\", \"com.lokal.localnews.PUSH_CONTENT_CATEGORY\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction shareb(){try {Android.shareText(\"https://play.google.com/store/apps/details?id=get.lokal.localnews\", \"Here is dummy share text: https://play.google.com/store/apps/details?id=get.lokal.localnews\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction lganalytics(){try{Android.logAnalyticsEvent(\"label_here\", \"eventType_here\", \"eventName_here\",{})}catch{Android.showToast(err);}}\r\n\r\n </script>\r\n</p>\r\n<h1>Working now 2</h1>\r\n<div class=\"p-5\"><button onclick=\"cb()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">call</button> <button onclick=\"extURL()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">external url</button> <button onclick=\"uriButton()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">uri button </button> <button onclick=\"ab()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">action button </button> <button onclick=\"shareb()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">share button </button> <button onclick=\"lganalytics()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">analytics</button></div><script type=\"text/javascript\">\nfunction validate(phone) {\n//  const regex = /^\\(?([0-9]{3,5})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4,5})${'$'}/;\n//  const regex = /^(?([0-9]{3,5})\\)?[-. ]*([0-9]{3})[-. ]*([0-9]{4,5})${'$'}/;\n  const regex = /^[+\\(\\)\\-. ,0-9]{3,}${'$'}/;\n  return regex.test(phone);\n}\n\nphonenumbers = document.getElementsByTagName(\"a\");\nfor (var i = 0; i < phonenumbers.length; i++) {\n  if(validate(phonenumbers[i].innerHTML)){\n    phonenumbers[i].addEventListener('click',fn, false);\n  }\n}\nfunction fn(ev){\n\tev.preventDefault();\n\tAndroid.clickCall(this.innerHTML);\n}\n</script>\n",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-08-17T14:35:59.988813+05:30",
+      "author": "ashutest",
+      "reporter": {
+        "name": "ashutest",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-08-17T14:57:37.096508+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 3,
+      "fb_shares": 0,
+      "views": 71,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 4,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": -804,
+      "title": "Content Categories",
+      "type": 23,
+      "position": 4,
+      "categories_nudge": [
+        {
+          "id": 7,
+          "name": "⚡ ట్రెండింగ్",
+          "english_name": "Trending",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/20/21/2021b7db077af57d9902c299d9644e59.png"
+        },
+        {
+          "id": 86,
+          "name": "ganesha te",
+          "english_name": "Ganesha testing",
+          "image": null
+        },
+        {
+          "id": 82,
+          "name": "#WarOnCorona",
+          "english_name": "war on corona",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/bc/71/bc71a7004371b64813a74afd6a3b4901.png"
+        },
+        {
+          "id": 83,
+          "name": "Ugadhi",
+          "english_name": "ugadhi",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/b7/b0/b7b0c7abe5d321e595b9449443651959.png"
+        },
+        {
+          "id": 4,
+          "name": "క్రీడలు",
+          "english_name": "sports",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/72/99/7299d2547a8350af3599ad677d9821c1.png"
+        },
+        {
+          "id": 13,
+          "name": "Wishes in telugu",
+          "english_name": "Birthday Wishes",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/67/45/67452c056fdc322a2535b643ff4edc84.png"
+        },
+        {
+          "id": 3,
+          "name": "రాశి ఫలాలు",
+          "english_name": "astrology",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/09/04/0904efdf0e1879241d00f61b22a7de31.png"
+        },
+        {
+          "id": 57,
+          "name": "క్విజ్",
+          "english_name": "Quiz Competition",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/c8/8a/c88a6eb6fdce9573a283d5485db25f3b.png"
+        },
+        {
+          "id": 53,
+          "name": "Quizzes and polls",
+          "english_name": "Quizzes and polls",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/67/a0/67a06c1c42c197f15a63924620a9250c.png"
+        },
+        {
+          "id": 10,
+          "name": "వినోదం",
+          "english_name": "Entertainment",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/ea/b7/eab7acaca2248dd97b79465128ae0bac.png"
+        },
+        {
+          "id": 14,
+          "name": "🌟 వాట్సాప్ STATUS",
+          "english_name": "Whatsapp Status",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/31/62/316260dd1fdcdc9c3d3b009da4b2c2d1.png"
+        },
+        {
+          "id": 9,
+          "name": "ఆంధ్రప్రదేశ్",
+          "english_name": "Andhra Pradesh",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/21/f7/21f7ed77fc173c7edfffa38629d781df.png"
+        },
+        {
+          "id": 8,
+          "name": "తెలంగాణ",
+          "english_name": "telangana",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/8b/6f/8b6f16c033705ca9dc92506551fe3d1d.png"
+        },
+        {
+          "id": 6,
+          "name": "జాతీయం",
+          "english_name": "national",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/42/30/42307e7b368ada4dae73c6bb43f37a22.png"
+        },
+        {
+          "id": 11,
+          "name": "కథలు",
+          "english_name": "stories",
+          "image": null
+        },
+        {
+          "id": 56,
+          "name": "క్లాసిఫైడ్స్ ",
+          "english_name": "Classifieds",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/a1/cf/a1cf59f8ec7fa207b9f922ca8dc95f07.png"
+        }
+      ],
+      "updated_on": "2022-08-17T13:32:02.054466+05:30"
+    },
+    {
+      "id": 12712,
+      "type": 11,
+      "title": "test post",
+      "slug": "test-post-1708-0811-1",
+      "keywords": "",
+      "content": "<style>\ntable { border-collapse: collapse; width:100%; font-family: 'Ramabhadra', 'Mallanna', sans-serif; font-size:14px}\nth { text-align: left}\ntr:not(:last-child) { border-bottom: 1.5px solid #ccc;}\na { text-decoration: none; color: #1b7ad2}\ntd, th { padding-bottom: 0.25em; padding-top: 0.25em}\n</style>\n<p>\r\n<script>\r\n         function extURL(){try { Android.executeAction(\"external_url\",\"https://www.getlokalapp.com\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction uriButton(){try {Android.executeAction(\"internal_url\", \"lokal://getlokalapp.com/share/posts/12686\"); } catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction cb(){try {Android.showToast(\"Toast check 123\");}catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction ab(){try {Android.executeAction(\"execute_action\", \"com.lokal.localnews.PUSH_CONTENT_CATEGORY\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction shareb(){try {Android.shareText(\"https://play.google.com/store/apps/details?id=get.lokal.localnews\", \"Here is dummy share text: https://play.google.com/store/apps/details?id=get.lokal.localnews\");} catch (err) {Android.showToast(err.toString());}}\r\n\r\nfunction lganalytics(){try{Android.logAnalyticsEvent(\"label_here\", \"eventType_here\", \"eventName_here\",{})}catch{Android.showToast(err);}}\r\n\r\n </script>\r\n</p>\r\n<h1>toast check 123</h1>\r\n<div class=\"p-5\"><button onclick=\"cb()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">call</button> <button onclick=\"extURL()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">external url</button> <button onclick=\"uriButton()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">uri button </button> <button onclick=\"ab()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">action button </button> <button onclick=\"shareb()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">share button </button> <button onclick=\"lganalytics()\" id=\"matrimonyOptin\" class=\"button w-50 mb-3\">analytics</button></div><script type=\"text/javascript\">\nfunction validate(phone) {\n//  const regex = /^\\(?([0-9]{3,5})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4,5})${'$'}/;\n//  const regex = /^(?([0-9]{3,5})\\)?[-. ]*([0-9]{3})[-. ]*([0-9]{4,5})${'$'}/;\n  const regex = /^[+\\(\\)\\-. ,0-9]{3,}${'$'}/;\n  return regex.test(phone);\n}\n\nphonenumbers = document.getElementsByTagName(\"a\");\nfor (var i = 0; i < phonenumbers.length; i++) {\n  if(validate(phonenumbers[i].innerHTML)){\n    phonenumbers[i].addEventListener('click',fn, false);\n  }\n}\nfunction fn(ev){\n\tev.preventDefault();\n\tAndroid.clickCall(this.innerHTML);\n}\n</script>\n",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-08-17T13:32:02.054466+05:30",
+      "author": "ashutest",
+      "reporter": {
+        "name": "ashutest",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-08-17T13:41:05.405265+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 0,
+      "fb_shares": 2,
+      "views": 84,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 10469,
+      "type": 13,
+      "title": "1.2రమ్మీ ఆడండి, నగదు గెలవండి  2.2ఉచితంగా నమోదై, ఇప్పుడే ఆడండి",
+      "slug": "1-1rmmii-aaddnddi-ngdu-gelvnddi-2-1ucitngaa-nmoodai-ippuddee-aaddnddi",
+      "keywords": "",
+      "content": "asdasd",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        },
+        {
+          "id": 1,
+          "title": "సూర్యాపేట జిల్లా Suryapet",
+          "short_name": "suryapet",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 84,
+          "name": "Corona",
+          "english_name": "corona community",
+          "image": null
+        },
+        {
+          "id": 83,
+          "name": "Ugadhi",
+          "english_name": "ugadhi",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/None/None_pakka_local.jpg"
+        },
+        {
+          "id": 82,
+          "name": "#WarOnCorona",
+          "english_name": "war on corona",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/None/None_Verified_688x460.jpg"
+        },
+        {
+          "id": 57,
+          "name": "Quiz",
+          "english_name": "Quiz Competition",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/None/None_Certificate_Background.jpg"
+        },
+        {
+          "id": 56,
+          "name": "Classifieds",
+          "english_name": "Classifieds",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/56/56_Ads.png"
+        },
+        {
+          "id": 55,
+          "name": "Real Estate",
+          "english_name": "Real Estate",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/55/55_Real_Estate.png"
+        },
+        {
+          "id": 54,
+          "name": "Matrimony",
+          "english_name": "Matrimony",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/54/54_Matrimony.png"
+        },
+        {
+          "id": 53,
+          "name": "Quizzes and polls",
+          "english_name": "Quizzes and polls",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/53/53_240_f_272786103_z_jdj_jl_cja_n_9_q_ptqdd_pc_a_9_m_58_m_ww_lgv_1_f_2.png"
+        },
+        {
+          "id": 52,
+          "name": "मध्य प्रदेश",
+          "english_name": "madhya_pradesh",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/52/52_group_296.png"
+        },
+        {
+          "id": 51,
+          "name": "tamil astro",
+          "english_name": "astrology_tamil",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/51/51_raashiphal_1.png"
+        },
+        {
+          "id": 50,
+          "name": "खेल",
+          "english_name": "sports_hindi",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/50/50_group_295.png"
+        },
+        {
+          "id": 49,
+          "name": "⚡ ट्रेंडिंग",
+          "english_name": "trending_hindi",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/49/49_group_297.png"
+        },
+        {
+          "id": 20,
+          "name": "లోకల్ సమాచారం",
+          "english_name": "localinfo",
+          "image": null
+        },
+        {
+          "id": 18,
+          "name": "Telengana Election Results",
+          "english_name": "election_results",
+          "image": null
+        },
+        {
+          "id": 15,
+          "name": "నవరాత్రి సంబరాలు",
+          "english_name": "Durga Puja Celebration posts",
+          "image": null
+        },
+        {
+          "id": 14,
+          "name": "🌟 వాట్సాప్ STATUS",
+          "english_name": "Whatsapp Status",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/14/14_Submission_Categories_Final-11_1_1.png"
+        },
+        {
+          "id": 13,
+          "name": "Wishes (without translation)",
+          "english_name": "Birthday Wishes",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/13/13_images_6_2.png"
+        },
+        {
+          "id": 12,
+          "name": "గ్రీన్ గణేష్ పోటీ",
+          "english_name": "green ganesha contest",
+          "image": null
+        },
+        {
+          "id": 11,
+          "name": "కథలు",
+          "english_name": "stories",
+          "image": null
+        },
+        {
+          "id": 10,
+          "name": "వినోదం",
+          "english_name": "Entertainment",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/10/10_eg_150727_main_560_2.png"
+        },
+        {
+          "id": 9,
+          "name": "ఆంధ్రప్రదేశ్",
+          "english_name": "Andhra Pradesh",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/9/9_Andhra.png"
+        },
+        {
+          "id": 8,
+          "name": "తెలంగాణ",
+          "english_name": "telangana",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/8/8_Telangana.png"
+        },
+        {
+          "id": 7,
+          "name": "⚡ ట్రెండింగ్",
+          "english_name": "Trending",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/7/7_Trending_round.png"
+        },
+        {
+          "id": 6,
+          "name": "జాతీయం",
+          "english_name": "national",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/6/6_India.png"
+        },
+        {
+          "id": 5,
+          "name": "విద్య",
+          "english_name": "education",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/5/5_group_286.png"
+        },
+        {
+          "id": 4,
+          "name": "క్రీడలు",
+          "english_name": "sports",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/4/4_group_295.png"
+        },
+        {
+          "id": 3,
+          "name": "🌅 ☀️ రాశి ఫలాలు",
+          "english_name": "astrology",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/3/3_group_298_1.png"
+        },
+        {
+          "id": 2,
+          "name": "Jobs",
+          "english_name": "jobs",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/2/2_Jobs.png"
+        },
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2020-05-27T21:49:35.469080+05:30",
+      "author": "pushkar",
+      "reporter": {
+        "name": "pushkar",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/10469/10469_WhatsApp_Image_2019-02-14_at_6.02.55_PM.jpeg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/fe/93/fe93b8077bf7227bc43a486bfb1f7472.jpg",
+          "caption": null,
+          "height": 1272,
+          "width": 1080
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2020-05-27T21:51:25.425953+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 197,
+      "fb_shares": 173,
+      "views": 75,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 1,
+      "custom_link": "http://getlokalapp.com/share/classifieds/matrimony/1?utm_source=share&utm_medium=profile&utm_campaign=matrimony_classifieds&utm_variant=website&utm_district_id=10",
+      "button_text": "Test madi",
+      "is_premium": false
+    },
+    {
+      "id": 12705,
+      "type": 2,
+      "title": "test job post update",
+      "slug": "test-job-post-update",
+      "keywords": "",
+      "content": "What: mamaoe5ktzkfzkzyoyszlyos6ozyyxpylxglxoysody96ep6dudpyod69s06d6dp69s69sd6p06d06d6ddp6d6pxpyoyxylxypxylxylxxpyxlyoyxpyxpyxypxypxpyxpyxxpyoyxxpxpypypyd6pd6d659s59s6psp6dpydpyxpyxoyxpyxypxypxypxnsns",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-08-05T13:38:15.285356+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7972/12010_54039.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/7d/ef/7def717da3a1e1758cefccda37cefe75.jpg",
+          "caption": null,
+          "height": 2102,
+          "width": 1080
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-07-14T23:38:25.211282+05:30",
+      "is_liked": 0,
+      "likes": 5,
+      "dislikes": 0,
+      "shares": 40,
+      "fb_shares": 27,
+      "views": 5738,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": -707,
+      "type": 20,
+      "title": "Lokal Services te",
+      "position": 7,
+      "services_nudge": [
+        {
+          "id": 1,
+          "name_eng": "Constituency News",
+          "name": "నియోజకవర్గ వార్తలు",
+          "icon_url": "https://media.getlokalapp.com/services-icons/const-news.svg",
+          "url": "lokal://getlokalapp.com/view/microlocation/37",
+          "new_posts_count_id": "tag_37",
+          "show_new_posts_count": true
+        },
+        {
+          "id": 7,
+          "name_eng": "matrimony",
+          "name": "matrimony te",
+          "icon_url": "https://media.getlokalapp.com/services-icons/matrimony.svg",
+          "url": "lokal://getlokalapp.com/view/matrimony/1",
+          "new_posts_count_id": "s_2",
+          "show_new_posts_count": true
+        },
+        {
+          "id": 3,
+          "name_eng": "Jobs",
+          "name": "Jobs_te",
+          "icon_url": "https://media.getlokalapp.com/services-icons/jobs.svg",
+          "url": "lokal://getlokalapp.com/view/category/2",
+          "new_posts_count_id": "c_2",
+          "show_new_posts_count": true
+        },
+        {
+          "id": 4,
+          "name_eng": "prices",
+          "name": "prices_te",
+          "icon_url": "https://media.getlokalapp.com/services-icons/prices.svg",
+          "url": "lokal://getlokalapp.com/view/category/20",
+          "new_posts_count_id": "c_20",
+          "show_new_posts_count": true
+        },
+        {
+          "id": 5,
+          "name_eng": "wishes",
+          "name": "Wishes te",
+          "icon_url": "https://media.getlokalapp.com/services-icons/wishes.svg",
+          "url": "lokal://getlokalapp.com/view/category/13",
+          "new_posts_count_id": "c_13",
+          "show_new_posts_count": true
+        }
+      ],
+      "updated_on": "2022-08-05T13:37:42.049377+05:30"
+    },
+    {
+      "id": 12704,
+      "type": 2,
+      "title": "test post",
+      "slug": "test-post-1407-1808-1",
+      "keywords": "",
+      "content": "What: nssnoe5ktzkfzkzyoyszlyos6ozyyxpylxglxoysody96ep6dudpyod69s06d6dp69s69sd6p06d06d6ddp6d6pxpyoyxylxypxylxylxxpyxlyoyxpyxpyxypxypxpyxpyxxpyoyxxpxpypypyd6pd6d659s59s6psp6dpydpyxpyxoyxpyxypxypxypxjsjs",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        },
+        {
+          "id": 4,
+          "title": "తెలంగాణ TE",
+          "short_name": "telangana",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-08-05T13:37:42.049377+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7971/12007_53894.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/50/c9/50c97d78a680d6ac95e241ccd8051787.jpg",
+          "caption": null,
+          "height": 2102,
+          "width": 1080
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-07-14T23:38:00.901335+05:30",
+      "is_liked": 0,
+      "likes": 2,
+      "dislikes": 0,
+      "shares": 29,
+      "fb_shares": 11,
+      "views": 674,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "type": 14,
+      "title": "testing for user intent nudge",
+      "classifieds": [
+        {
+          "button_text": "Read news",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/2c/9e/2c9e9fad26432b10bb81b294e5f5d2fc.jpg",
+          "icon_url": null
+        },
+        {
+          "button_text": "Get info about my district",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/df/be/dfbe03cab1e26c72930f8e80b5dab66a.jpg",
+          "icon_url": null
+        },
+        {
+          "button_text": "Search for a job",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/ef/1c/ef1cce12d12610177b193afb329308bf.jpg",
+          "icon_url": null
+        },
+        {
+          "button_text": "promote my business",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/03/01/0301fe30d7725524e7ca8b7b0d983712.jpg",
+          "icon_url": null
+        },
+        {
+          "button_text": "find a life partner",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/75/ac/75ac7afac813d33ddeac203e6626fa2e.jpg",
+          "icon_url": null
+        },
+        {
+          "button_text": "View More",
+          "background_color": "ffffff",
+          "category": null,
+          "action": "com.lokal.localnews.user.user_intent",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/01/d1/01d1438965557e112ce3f264c5ca9912.jpg",
+          "icon_url": null
+        }
+      ],
+      "updated_on": "2022-07-13T13:57:24.535457+05:30",
+      "position": 7,
+      "collapsed_tag_count": 6,
+      "check_for_intent": true,
+      "lowest_version_code": 256,
+      "id": -507
+    },
+    {
+      "id": 9848,
+      "type": 13,
+      "title": "Rummy Circle",
+      "slug": "rummy-circle",
+      "keywords": "",
+      "content": "Rummy Circle\r\n\r\nhttps://www.rummycircle.com/play-rummy-be-boredom-free-tel-gen.html?utm_source=Lokal&utm_medium=banner&utm_content=Freedom_Gen_Tel&utm_campaign=App_AP&utm_new_param=TNewConcept-Abanner-S3Play-S4YesTable-S5Male-S6Cash-S7NoBonus",
+      "locations": [
+        {
+          "id": 4,
+          "title": "తెలంగాణ TE",
+          "short_name": "telangana",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        },
+        {
+          "id": 5,
+          "title": "ఆంధ్రప్రదేశ్ AP",
+          "short_name": "andhra",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        }
+      ],
+      "categories": [
+        {
+          "id": 10,
+          "name": "వినోదం",
+          "english_name": "Entertainment",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/10/10_eg_150727_main_560_2.png"
+        },
+        {
+          "id": 4,
+          "name": "క్రీడలు",
+          "english_name": "sports",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/4/4_group_295.png"
+        },
+        {
+          "id": 7,
+          "name": "⚡ ట్రెండింగ్",
+          "english_name": "Trending",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/7/7_Trending_round.png"
+        },
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2019-09-19T17:36:15.562713+05:30",
+      "author": "Lokal",
+      "reporter": {
+        "name": "Lokal",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/9848/9848_rummy_circle.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/97/bd/97bda12d53ef8da3b198b69a082474b5.jpg",
+          "caption": null,
+          "height": 860,
+          "width": 626
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2019-09-19T17:39:35.579233+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 70,
+      "fb_shares": 30,
+      "views": 69,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 1,
+      "custom_link": "https://getlokalapp.com/share/posts/10214",
+      "button_text": "Redirect",
+      "is_premium": false
+    },
+    {
+      "type": 7,
+      "title": "Click a constituency below to see local news:",
+      "tags": [
+        {
+          "id": 5,
+          "title": "Warangal constituency",
+          "type": 4,
+          "english_name": "warangal constituency",
+          "thumb_url": null
+        },
+        {
+          "id": 37,
+          "title": "��warangal city",
+          "type": 4,
+          "english_name": "warangal city",
+          "thumb_url": null
+        }
+      ],
+      "content": "",
+      "categories": [],
+      "images": [
+        {
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/42/77/4277d0bcc4488216b757a31d0efae9e6.jpg"
+        }
+      ],
+      "videos": [],
+      "updated_on": "2022-07-13T13:57:24.535457+05:30",
+      "collapsed_tag_count": 7,
+      "id": -204
+    },
+    {
+      "id": 12703,
+      "type": 2,
+      "title": "Android",
+      "slug": "android-test",
+      "keywords": "",
+      "content": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-07-13T13:57:24.535457+05:30",
+      "author": "Android testing",
+      "reporter": {
+        "name": "Android testing",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/12703/12703_Sample-PNG-Image.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/41/98/41989893c6e1dec300688b923d35f8d9.jpg",
+          "caption": null,
+          "height": 409,
+          "width": 864
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-07-13T14:00:46.541126+05:30",
+      "is_liked": 0,
+      "likes": 5,
+      "dislikes": 0,
+      "shares": 15,
+      "fb_shares": 31,
+      "views": 264,
+      "num_comments": 3,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12702,
+      "type": 2,
+      "title": "తెలుగు",
+      "slug": "telugu",
+      "keywords": "",
+      "content": "వార్తలుfhjdgjg hdbhfdhjf jgcbkfx jdxbhfdc nfxvvవార్తలుfhjdgjg hdbhfdhjf jgcbkfx jdxbhfdc nfxvvవార్తలుfhjdgjg hdbhfdhjf jgcbkfx jdxbhfdc nfxvvవార్తలుfhjdgjg hdbhfdhjf jgcbkfx jdxbhfdc nfxvv",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [
+        {
+          "id": 18,
+          "name": "దాడి",
+          "english_text": "Raid"
+        }
+      ],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-07-13T12:47:15.398072+05:30",
+      "author": "mojo",
+      "reporter": {
+        "id": 4865545,
+        "name": "mojo",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/8015/12059_188536.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/6b/01/6b012ffa1ecb2a96d7d014fa90986055.jpg",
+          "caption": null,
+          "height": 2260,
+          "width": 1032
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-07-13T12:47:16.531248+05:30",
+      "is_liked": 0,
+      "likes": 2,
+      "dislikes": 0,
+      "shares": 22,
+      "fb_shares": 10,
+      "views": 475,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "mojo లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 9805,
+      "type": 13,
+      "title": "1.1రమ్మీ ఆడండి, నగదు గెలవండి 2.1ఉచితంగా నమోదై, ఇప్పుడే ఆడండి",
+      "slug": "heddspees-anuvrtnn-nunddi-mnssunu-pondnddi-anuvrtnaanni-ippuddee-ddaunloodd-ceeynddi",
+      "keywords": "",
+      "content": "హెడ్‌స్పేస్ అనువర్తనం నుండి మనస్సును పొందండి. అనువర్తనాన్ని ఇప్పుడే డౌన్‌లోడ్ చేయండి. \r\nhttps://play.google.com/store/apps/details?id=com.getsomeheadspace.android",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        },
+        {
+          "id": 1,
+          "title": "సూర్యాపేట జిల్లా Suryapet",
+          "short_name": "suryapet",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        },
+        {
+          "id": 4,
+          "title": "తెలంగాణ TE",
+          "short_name": "telangana",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        },
+        {
+          "id": 2,
+          "name": "Jobs",
+          "english_name": "jobs",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/2/2_Jobs.png"
+        },
+        {
+          "id": 3,
+          "name": "🌅 ☀️ రాశి ఫలాలు",
+          "english_name": "astrology",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/3/3_group_298_1.png"
+        },
+        {
+          "id": 12,
+          "name": "గ్రీన్ గణేష్ పోటీ",
+          "english_name": "green ganesha contest",
+          "image": null
+        },
+        {
+          "id": 4,
+          "name": "క్రీడలు",
+          "english_name": "sports",
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/Category/4/4_group_295.png"
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2019-09-12T11:31:40.831168+05:30",
+      "author": "pushkar",
+      "reporter": {
+        "name": "pushkar",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/9805/9805_share.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/46/5d/465dd5021a1a5ed1184f7f9341084850.jpg",
+          "caption": null,
+          "height": 600,
+          "width": 1230
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2019-09-12T11:35:53.028913+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 56,
+      "fb_shares": 44,
+      "views": 68,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 1,
+      "custom_link": "https://play.google.com/store/apps/details?id=com.getsomeheadspace.android",
+      "button_text": "డౌన్లోడ్",
+      "is_premium": false
+    },
+    {
+      "id": 12701,
+      "type": 2,
+      "title": "head line",
+      "slug": "head-line-1207-1436-1",
+      "keywords": "",
+      "content": "What: newspaper gxjgxbzhg gfssbsjv hds s sbgsvs hcs snsyscsbshsgsvs suseg snsys sbshsvsbs bausvbsjshsd bhsvsvsbdhdhsbs hsgdvbdbssjshvsvsbshejdhvdvdhdvd d hsbdvdbdbsbdhhddbbr jdvjgdgcbgdvbgvbbnfvfcbjfcbjgfcjdvjgdgcbgdvbgvbbnfvfcbjfcbjgfc bzgdvdbdhddhdbdhdhdhdbd\r\nWhere: haha\r\nWhen: 11-7-2022 7:53 PM\r\nAdditional info: nothing",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [
+        {
+          "id": 18,
+          "name": "దాడి",
+          "english_text": "Raid"
+        }
+      ],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-07-12T20:06:12.051898+05:30",
+      "author": "mojo",
+      "reporter": {
+        "id": 4865545,
+        "name": "mojo",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-07-12T20:06:39.970813+05:30",
+      "is_liked": 0,
+      "likes": 1,
+      "dislikes": 0,
+      "shares": 12,
+      "fb_shares": 24,
+      "views": 153,
+      "num_comments": 2,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "mojo లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12612,
+      "type": 2,
+      "title": "constituency news 1",
+      "slug": "constituency-news-1",
+      "keywords": "",
+      "content": "testing news",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 97,
+          "name": "Voice Of people",
+          "english_name": "Voice Of People",
+          "image": null
+        },
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-07-07T09:04:14.175126+05:30",
+      "author": "aishwarya",
+      "reporter": {
+        "name": "aishwarya",
+        "verified": false,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/images/12612/12612_download.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/5a/c6/5ac6d94cab8c48cd2afcbb518d176d60.jpg",
+          "caption": null,
+          "height": 194,
+          "width": 259
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-05-12T19:05:43.916012+05:30",
+      "is_liked": 0,
+      "likes": 2,
+      "dislikes": 0,
+      "shares": 43,
+      "fb_shares": 60,
+      "views": 261,
+      "num_comments": 16,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": false,
+        "message": ""
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12686,
+      "type": 2,
+      "title": "bsbdbdbddnnxnx",
+      "slug": "bsbdbdbddnnxnx",
+      "keywords": "",
+      "content": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxzhejdenb15263738837363egbebednbssbnsnbsbsbsbbsvsvvsvvdbdvbdvvdbdbdbdbbebrbdbdbd26e67373838388383b8788",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 97,
+          "name": "Voice Of people",
+          "english_name": "Voice Of People",
+          "image": null
+        },
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-06-29T18:48:02.238209+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865557,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7870/11786_358896.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/d6/f7/d6f7e00436e7be12efb78d8aa3e48c05.jpg",
+          "caption": null,
+          "height": 490,
+          "width": 720
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-29T18:48:03.409201+05:30",
+      "is_liked": 0,
+      "likes": 1,
+      "dislikes": 0,
+      "shares": 112,
+      "fb_shares": 32,
+      "views": 763,
+      "num_comments": 2,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12685,
+      "type": 2,
+      "title": "News_Submisson_category_testing",
+      "slug": "news-submisson-category-testing",
+      "keywords": "",
+      "content": "qwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxzqwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxzqwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxzqwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxzqwertyuiopasdfghjklzxcvbnmqwertyuiopasdffghjklmnbvcxz",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 97,
+          "name": "Voice Of people",
+          "english_name": "Voice Of People",
+          "image": null
+        },
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-06-29T18:42:57.092625+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865557,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7869/11785_358894.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/3f/fe/3ffe2a19b931bd9029497f7f95d57a9d.jpg",
+          "caption": null,
+          "height": 255,
+          "width": 1064
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-29T18:42:57.902044+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 37,
+      "fb_shares": 7,
+      "views": 162,
+      "num_comments": 1,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12684,
+      "type": 2,
+      "title": "Test_news",
+      "slug": "test-news-2906-1215-1",
+      "keywords": "",
+      "content": "hshxbxbddhjejebdbdbebehedhdbbdbebebebhedhbdhdhdhdhhehdhshxbxbddhjejebdbdbebehedhdbbdbebebebhedhbdhdhdhdhhehdhshxbxbddhjejebdbdbebehedhdbbdbebebebhedhbdhdhdhdhhehdhshxbxbddhjejebdbdbebehedhdbbdbebebebhedhbdhdhdhdhhehd",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [
+        {
+          "id": 1,
+          "name": "క్రైమ్",
+          "english_text": "Crime"
+        },
+        {
+          "id": 2,
+          "name": "రాజకీయం",
+          "english_text": "Political"
+        },
+        {
+          "id": 3,
+          "name": "ప్రమాదం",
+          "english_text": "Accident"
+        },
+        {
+          "id": 4,
+          "name": "సమావేశాలు",
+          "english_text": "Meetings"
+        }
+      ],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-06-29T17:45:58.481786+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865557,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7865/11781_362158.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/88/3a/883ad3a3d3f10288dfb30f4a643c23b1.jpg",
+          "caption": null,
+          "height": 2943,
+          "width": 1038
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-29T17:45:59.708524+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 14,
+      "fb_shares": 12,
+      "views": 62,
+      "num_comments": 1,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12683,
+      "type": 2,
+      "title": "test post 123",
+      "slug": "test-post-123-2806-1331-1",
+      "keywords": "",
+      "content": "d9t8ditx8tzxtitxgixititztizztizti8tztx8txitxixititxitxitxxti8tss8titzitzitz8dtistiists8tsts8tst8z8ts58t8z8truzzturzuzr7zt7zurzitzizuttzzt7z7tz7tz8tzt8zitxt8xt8xt8tixxtixt8z8t8tzitxitxxt8xt8x8txt8zt8xt8tz8t8zzt8",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "��warangal city",
+          "id": 37,
+          "type": 4,
+          "english_name": "warangal city"
+        }
+      ],
+      "updated_on": "2022-06-28T19:01:15.375957+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7863/11777_53533.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/e3/1c/e31c7e46942e3355049916e76058e236.jpg",
+          "caption": null,
+          "height": 1553,
+          "width": 1080
+        },
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7863/11778_53537.png",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/ac/54/ac54c9e508afcd96e6e8ced076b3d7aa.jpg",
+          "caption": null,
+          "height": 1553,
+          "width": 1080
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-28T19:01:16.280117+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 14,
+      "fb_shares": 13,
+      "views": 157,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12588,
+      "type": 2,
+      "title": "Post with Links & Phone Numbers",
+      "slug": "lorem-ipsum-dolor-sit-amet-consectus-adipising-elite",
+      "keywords": "",
+      "content": "లోరెం ఇప్సమ్ డోలర్ సిట్ అమేట్, కన్సెక్టూర్ అడిపిసింగ్ ఎలిట్. లేదా లోటస్ నోట్స్ వంటి మీ టెక్స్ట్ ఎడిటింగ్ సాఫ్ట్వేర్ లో లోరెం ఇప్సమ్ టెక్స్ట్ ఉత్పత్తి ప్లగిన్లను ఇన్స్టాల్ చేయవచ్చు\r\n\r\nPhone 1 : 9876543210\r\n\r\nDummy text\r\n\r\nLink : https://www.google.com/\r\n\r\nDummy text\r\n\r\nPhone 2 : 7908712345\r\n\r\nDummy text\r\n\r\nLink: http://www.abc.com/a/dsdfs",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [
+        {
+          "id": 17,
+          "name": "విద్యుత్ సమాచారం",
+          "english_text": "Power Information"
+        },
+        {
+          "id": 15,
+          "name": "ఉద్యోగ సమాచారం",
+          "english_text": "Jobs Information"
+        },
+        {
+          "id": 12,
+          "name": "తప్పిపోయిన వారి సమాచారం",
+          "english_text": "Missing Information"
+        },
+        {
+          "id": 11,
+          "name": "తనిఖీ",
+          "english_text": "Inspection"
+        },
+        {
+          "id": 7,
+          "name": "సహాయం",
+          "english_text": "Help"
+        },
+        {
+          "id": 10,
+          "name": "అభివృద్ధి",
+          "english_text": "Development"
+        }
+      ],
+      "tags": [],
+      "updated_on": "2022-06-28T16:01:56.093984+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7737/11594_90068.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/3e/e7/3ee7a4c23dc8ac7f267124bb9bd93b3f.jpg",
+          "caption": null,
+          "height": 768,
+          "width": 1024
+        },
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7737/11595_90069.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/11/71/11719f53d6693b6f4729dddb5139e2e7.jpg",
+          "caption": null,
+          "height": 823,
+          "width": 550
+        },
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7737/11596_88114.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/66/b2/66b268990499ab5f645bca6ca7a5bf9a.jpg",
+          "caption": null,
+          "height": 422,
+          "width": 759
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-04-25T16:01:57.054261+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 1,
+      "shares": 43,
+      "fb_shares": 27,
+      "views": 2259,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12561,
+      "type": 2,
+      "title": "అంతిమ యంత్రం",
+      "slug": "the-ultimate-machine-1404-0625-1",
+      "keywords": "",
+      "content": "మనందరికీ భౌతిక సృష్టిలో అత్యంత సన్నిహిత భాగం మన స్వంత శరీరాలు భౌతిక శరీరం యొక్క మొదటి బహుమతి మనకు తెలుసు, ఇది గ్రహం మీద ఉన్న ప్రతి ఇతర యంత్రం దీని నుండి బయటకు వచ్చిన",
+      "locations": [
+        {
+          "id": 4,
+          "title": "తెలంగాణ TE",
+          "short_name": "telangana",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-06-27T11:55:34.336586+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7686/11536_91895.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/a0/a1/a0a10a16f7e3571276f27de3d5eda868.jpg",
+          "caption": null,
+          "height": 1440,
+          "width": 1440
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-04-14T11:55:35.329621+05:30",
+      "is_liked": 0,
+      "likes": 1,
+      "dislikes": 0,
+      "shares": 59,
+      "fb_shares": 19,
+      "views": 1614,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12560,
+      "type": 2,
+      "title": "అంతిమ యంత్రం",
+      "slug": "the-ultimate-machine-1404-0621-1",
+      "keywords": "",
+      "content": "మనందరికీ భౌతిక సృష్టిలో అత్యంత సన్నిహిత భాగం మన స్వంత శరీరాలు భౌతిక శరీరం యొక్క మొదటి బహుమతి మనకు తెలుసు, ఇది గ్రహం మీద ఉన్న ప్రతి ఇతర యంత్రం దీని నుండి బయటకు వచ్చిన అంతిమ యంత్ర",
+      "locations": [
+        {
+          "id": 4,
+          "title": "తెలంగాణ TE",
+          "short_name": "telangana",
+          "type": 2,
+          "locale": [
+            "te"
+          ],
+          "state": null,
+          "state_obj": {}
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [],
+      "updated_on": "2022-06-27T11:51:20.998531+05:30",
+      "author": "test daivansh",
+      "reporter": {
+        "id": 4865503,
+        "name": "test daivansh",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7685/11535_91895.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/52/fc/52fcfe101cbe3c03955d082e3055256d.jpg",
+          "caption": null,
+          "height": 1440,
+          "width": 1440
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-04-14T11:51:21.879070+05:30",
+      "is_liked": 0,
+      "likes": 2,
+      "dislikes": 0,
+      "shares": 25,
+      "fb_shares": 7,
+      "views": 291,
+      "num_comments": 2,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "test daivansh లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12679,
+      "type": 2,
+      "title": "test image quality 11",
+      "slug": "test-image-quality-11",
+      "keywords": "",
+      "content": "What: test crop to reduce to reduce to reduce to reduce to reduce to reduce to reduce to reduce to reduce to reduce the same for me and I will be in the time of year and you can do it in the morning and for the same to the same",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "warangal constituency ",
+          "id": 5,
+          "type": 4,
+          "english_name": "warangal constituency"
+        }
+      ],
+      "updated_on": "2022-06-26T00:27:25.456734+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865245,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7862/11776_52839.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/41/1a/411a68ae5d84ea748a9cf32beb28aa68.jpg",
+          "caption": null,
+          "height": 760,
+          "width": 1080
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-26T00:27:34.114020+05:30",
+      "is_liked": 0,
+      "likes": 0,
+      "dislikes": 0,
+      "shares": 81,
+      "fb_shares": 0,
+      "views": 665,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12678,
+      "type": 2,
+      "title": "test image quality 10",
+      "slug": "test-image-quality-10",
+      "keywords": "",
+      "content": "What: test is there a way of the day is there in a call and you can do the work of you in a call and get the way of life is not the most common as a week to get the same to the time to be on the way of a day is not the",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "warangal constituency ",
+          "id": 5,
+          "type": 4,
+          "english_name": "warangal constituency"
+        }
+      ],
+      "updated_on": "2022-06-26T00:20:16.570864+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865245,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7861/11775_52836.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/97/3f/973ff568af60c0d1e6b77a44758c3a6f.jpg",
+          "caption": null,
+          "height": 720,
+          "width": 960
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-26T00:21:07.476625+05:30",
+      "is_liked": 0,
+      "likes": 1,
+      "dislikes": 0,
+      "shares": 94,
+      "fb_shares": 34,
+      "views": 2180,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    },
+    {
+      "id": 12677,
+      "type": 2,
+      "title": "test image quality 9",
+      "slug": "test-image-quality-9",
+      "keywords": "",
+      "content": "What: test crop top to the time to be on the way of life in a call and I will do the way of the day and time and then we will go on a call and get the time of you to have the time of year of you in a week of you in a week of a year and a year of happiness and prosperity",
+      "locations": [
+        {
+          "id": 9,
+          "title": "వరంగల్  Warangal",
+          "short_name": "warangal",
+          "type": 1,
+          "locale": [
+            "te"
+          ],
+          "state": 4,
+          "state_obj": {
+            "id": 4,
+            "title": "తెలంగాణ TE",
+            "short_name": "telangana",
+            "locale": [
+              "te"
+            ],
+            "type": 2,
+            "state": null,
+            "state_obj": {}
+          }
+        }
+      ],
+      "categories": [
+        {
+          "id": 1,
+          "name": "లోకల్ వార్తలు",
+          "english_name": "lokal",
+          "image": null
+        }
+      ],
+      "ugc_categories": [],
+      "tags": [
+        {
+          "thumb_url": null,
+          "title": "warangal constituency ",
+          "id": 5,
+          "type": 4,
+          "english_name": "warangal constituency"
+        }
+      ],
+      "updated_on": "2022-06-26T00:19:38.992786+05:30",
+      "author": "pk",
+      "reporter": {
+        "id": 4865245,
+        "name": "pk",
+        "verified": true,
+        "thumb_url": null
+      },
+      "sub_reporters": [],
+      "images": [
+        {
+          "image": "https://s3.ap-south-1.amazonaws.com/getlokal-output/s3uploadsubmissions/7860/11774_52835.jpg",
+          "thumb_url": "https://s3.ap-south-1.amazonaws.com/getlokal-output/cache/98/85/9885eb4df44891ee6f2e19bcfa097fad.jpg",
+          "caption": null,
+          "height": 533,
+          "width": 710
+        }
+      ],
+      "videos": [],
+      "is_active": true,
+      "created_on": "2022-06-26T00:19:55.777736+05:30",
+      "is_liked": 0,
+      "likes": 1,
+      "dislikes": 0,
+      "shares": 6,
+      "fb_shares": 10,
+      "views": 65,
+      "num_comments": 0,
+      "video_processed": false,
+      "submit": {
+        "is_user_submitted": true,
+        "message": "pk లోకల్ యాప్ లో  వార్తలు  రాస్తున్నారు. మీరు కూడా వీరితో కలిసి మీ ప్రాంతానికి గొంతు అవ్వండి."
+      },
+      "collapse": false,
+      "info_post_config": 0,
+      "custom_link": null,
+      "button_text": null,
+      "is_premium": false
+    }
+  ]
+}
