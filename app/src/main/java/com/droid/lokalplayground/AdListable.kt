@@ -1,6 +1,7 @@
 package com.droid.lokalplayground
 
 import android.os.Parcelable
+import com.droid.lokalplayground.posts.Video
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -10,6 +11,266 @@ abstract class AdListable {
     abstract val type: Int
     abstract val objectType: Int
 }
+
+@Serializable
+@Parcelize
+data class ArticlePost(
+    override val id: Int = 2,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("is_active") val isActive: Boolean = false,
+    @SerialName("collapse") val collapse: Boolean = false,
+    @SerialName("is_premium") val isPremium: Boolean = false,
+    @SerialName("video_processed") val videoProcessed: Boolean = false,
+
+    @SerialName("is_liked") val isLiked: Int = 0,
+    @SerialName("likes") val likes: Int = 0,
+    @SerialName("dislikes") val dislikes: Int = 0,
+    @SerialName("shares") val shares: Int = 0,
+    @SerialName("fb_shares") val fbShares: Int = 0,
+    @SerialName("views") val views: Int = 0,
+    @SerialName("info_post_config") val infoPostConfig: Int = 0,
+    @SerialName("num_comments") val commentsCount: Int = 0,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("created_on") val createdOn: String? = null,
+    @SerialName("author") val author: String? = null,
+    @SerialName("slug") val slug: String? = null,
+    @SerialName("content") val content: String? = null,
+    @SerialName("locations") val locations: List<LokalLocation> = listOf(),
+    @SerialName("categories") val categories: List<Classified.ClassifiedNudgeList.Category> = listOf(),
+    @SerialName("ugc_categories") val ugcCategories: List<Submission.UgcCategory> = listOf(),
+    @SerialName("tags") val tags: List<Classified.Tag> = listOf(),
+    @SerialName("images") val images: List<ServiceNudgeBanner.ServiceNudgeBannerItem.Image> = listOf(),
+    @SerialName("videos") val videos: List<com.droid.lokalplayground.Video> = listOf(),
+
+    @SerialName("reporter") val reporter: Submission.SubmissionPostDetails.Reporter? = null,
+    @SerialName("submit") val submit: Submit? = null
+
+) : Parcelable, AdListable()
+
+
+@Serializable
+@Parcelize
+data class TagPost(
+    override val id: Int = 7,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("collapsed_tag_count") val collapsedTagCount: Int = 0,
+    @SerialName("tags") val tags: List<Classified.Tag>? = listOf()
+
+) : Parcelable, AdListable()
+
+
+@Serializable
+@Parcelize
+data class VoiceOfThePeople(
+    override val id: Int = 24,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("icon") val icon: String? = null,
+
+    @SerialName("vops") val vopsList: List<Vops>? = listOf()
+
+) : Parcelable, AdListable() {
+
+    @Serializable
+    @Parcelize
+    data class Vops(
+        @SerialName("id") val id: Int,
+        @SerialName("post") val articlePost: ArticlePost? = null,
+        @SerialName("poll") val poll: Poll? = null,
+        @SerialName("reactions") val reactions: Reactions? = null,
+
+        @SerialName("is_liked") val isLiked: Int = 0,
+        @SerialName("success_story") val successStory: String? = null,
+        @SerialName("type") val type: Int = 0
+
+    ) : Parcelable {
+        @Serializable
+        @Parcelize
+        data class Reactions(
+            @SerialName("num_likes") val likes: Int = 0,
+            @SerialName("num_comments") val comments: Int = 0,
+            @SerialName("shares") val shares: Int = 0,
+            @SerialName("num_shares") val numShares: Int = 0,
+            @SerialName("fb_shares") val fbShares: Int = 0,
+            @SerialName("num_fb_shares") val numFbShares: Int = 0
+        ) : Parcelable
+
+        @Serializable
+        @Parcelize
+        data class Poll(
+            @SerialName("id") val id: Int,
+            @SerialName("title") val title: String? = null,
+            @SerialName("end_time") val endTime: String? = null,
+            @SerialName("updated_on") val updatedOn: String? = null,
+            @SerialName("type") val type: Int = 0,
+            @SerialName("total_votes") val totalVotes: Int = 0,
+            @SerialName("is_voted") val isVoted: Int = 0,
+
+            @SerialName("is_ended") val isEnded: Boolean = false,
+
+            @SerialName("options") val pollOptions: List<PollOption> = listOf()
+
+        ) : Parcelable {
+
+            @Serializable
+            @Parcelize
+            data class PollOption(
+                @SerialName("id") val id: Int,
+                @SerialName("title") val title: String? = null,
+                @SerialName("thumb_url") val thumbUrl: String? = null,
+                @SerialName("num_votes") val numVotes: Int = 0,
+                @SerialName("poll") val Int: Int = 0,
+                @SerialName("is_correct") val isEnded: Boolean = false
+            ) : Parcelable
+        }
+    }
+}
+
+
+@Serializable
+@Parcelize
+data class CategoriesCardNudge(
+    override val id: Int = 23,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("position") val position: Int = 0,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("categories_nudge") val categoriesList: List<CategoryCard> = listOf()
+
+) : Parcelable, AdListable() {
+
+    @Serializable
+    @Parcelize
+    data class CategoryCard(
+        @SerialName("id") val id: Int,
+        @SerialName("name") val name: String? = null,
+        @SerialName("english_name") val englishName: String? = null,
+        @SerialName("image") val image: String? = null,
+    ) : Parcelable
+}
+
+@Serializable
+@Parcelize
+data class LokalServices(
+    override val id: Int = 20,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("services_nudge") val services: List<LokalService> = listOf(),
+    @SerialName("position") val position: Int = 0,
+
+    ) : Parcelable, AdListable() {
+
+    @Serializable
+    @Parcelize
+    data class LokalService(
+        @SerialName("id") val id: Int,
+        @SerialName("name_eng") val englishName: String? = null,
+        @SerialName("name") val name: String? = null,
+        @SerialName("icon_url") val iconUrl: String? = null,
+        @SerialName("url") val url: String? = null,
+        @SerialName("new_posts_count_id") val newPostsCountId: String? = null,
+        @SerialName("show_new_posts_count") val showNewPostsCount: Boolean = false
+
+    ) : Parcelable
+}
+
+@Serializable
+@Parcelize
+data class InfoPost(
+    override val id: Int = 11,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("slug") val slug: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("created_on") val createdOn: String? = null,
+    @SerialName("author") val author: String? = null,
+    @SerialName("content") val content: String? = null,
+    @SerialName("tags") val tags: List<Classified.Tag>? = listOf(),
+
+    @SerialName("reporter") val reporter: Submission.SubmissionPostDetails.Reporter? = null,
+
+    @SerialName("is_active") val isActive: Boolean = false,
+    @SerialName("collapse") val collapse: Boolean = false,
+    @SerialName("is_premium") val isPremium: Boolean = false,
+    @SerialName("video_processed") val videoProcessed: Boolean = false,
+
+    @SerialName("is_liked") val isLiked: Int = 0,
+    @SerialName("likes") val likes: Int = 0,
+    @SerialName("dislikes") val dislikes: Int = 0,
+    @SerialName("shares") val shares: Int = 0,
+    @SerialName("fb_shares") val fbShares: Int = 0,
+    @SerialName("views") val views: Int = 0,
+    @SerialName("info_post_config") val infoPostConfig: Int = 0,
+    @SerialName("num_comments") val commentsCount: Int = 0,
+
+
+    @SerialName("locations") val locations: List<LokalLocation> = listOf(),
+    @SerialName("categories") val categories: List<Classified.ClassifiedNudgeList.Category> = listOf()
+
+) : Parcelable, AdListable()
+
+
+@Serializable
+@Parcelize
+data class ClassifiedPost(
+    override val id: Int = 14,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("collapsed_tag_count") val collapsedTagCount: Int = 0,
+    @SerialName("position") val position: Int = -1,
+    @SerialName("lowest_version_code") val lowestVersionCode: Int = 0,
+    @SerialName("check_for_intent") val checkForIntent: Boolean = false,
+
+    @SerialName("classifieds") val classifiedList: List<Classified> = listOf()
+
+) : Parcelable, AdListable() {
+    @Serializable
+    @Parcelize
+    data class Classified(
+        @SerialName("button_text") val buttonText: String? = null,
+        @SerialName("background_color") val backgroundColor: String? = null,
+        @SerialName("action") val action: String? = null,
+        @SerialName("thumb_url") val thumbUrl: String? = null
+    ) : Parcelable
+}
+
+@Serializable
+@Parcelize
+data class Submit(
+    @SerialName("is_user_submitted") val isUserSubmitted: Boolean = false,
+    @SerialName("message") val message: String? = null
+) : Parcelable
+
+@Serializable
+@Parcelize
+data class Video(
+    @SerialName("stream_url") val streamUrl: String? = null,
+    @SerialName("video_url") val videoUrl: String? = null,
+    @SerialName("duration_string") val durationString: String? = null,
+    @SerialName("size_string") val size: String? = null,
+    @SerialName("duration") val duration: Long = 0,
+) : Parcelable
 
 @Serializable
 @Parcelize
@@ -478,6 +739,30 @@ data class LokalLocation(
 
 @Serializable
 @Parcelize
+data class FeaturedData(
+    @SerialName("count") val count: Int,
+    @SerialName("next") val next: Unit,
+    @SerialName("previous") val previous: Unit,
+    @SerialName("results") val featuredPosts: List<FeaturedPost> = listOf()
+) : Parcelable {
+
+    @Serializable
+    @Parcelize
+    data class FeaturedPost(
+        @SerialName("id") val id: Int,
+        @SerialName("type") val type: Int = 0,
+        @SerialName("which_kind") val whichKind: Int = 0,
+        @SerialName("link_type") val linkType: Int = 0,
+        @SerialName("title") val title: String? = null,
+        @SerialName("image") val image: String? = null,
+        @SerialName("uri") val uri: String? = null,
+        @SerialName("button_text") val buttonText: String? = null,
+        @SerialName("custom_obj") val category: Classified.ClassifiedNudgeList.Category? = null
+    ) : Parcelable
+}
+
+@Serializable
+@Parcelize
 data class Submission(
     @SerialName("id") val id: Int,
     @SerialName("status") val status: Int,
@@ -531,7 +816,7 @@ data class Submission(
 
         var isSelected: Boolean = false,
         val currAdapterPos: Int = 0
-    ): Parcelable
+    ) : Parcelable
 
     @Serializable
     @Parcelize
@@ -547,7 +832,7 @@ data class Submission(
         @SerialName("title") val title: String? = null,
 
         @SerialName("sub_reporters") val subAuthors: List<Reporter> = listOf(),
-    ): Parcelable {
+    ) : Parcelable {
 
         @Serializable
         @Parcelize
@@ -558,7 +843,7 @@ data class Submission(
             @SerialName("name") val title: String? = null,
             @SerialName("thumb_url") val thumbUrl: String? = null,
             @SerialName("verified") val reporterVerified: Boolean = false,
-        ): Parcelable
+        ) : Parcelable
     }
 }
 
