@@ -1,7 +1,6 @@
 package com.droid.lokalplayground
 
 import android.os.Parcelable
-import com.droid.lokalplayground.posts.Video
 import kotlinx.parcelize.Parcelize
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
@@ -10,6 +9,101 @@ abstract class AdListable {
     abstract val id: Int
     abstract val type: Int
     abstract val objectType: Int
+    //updateOn
+    //createdOn
+}
+
+
+
+@Serializable
+@Parcelize
+data class AdCardPost(
+    override val id: Int = 2,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("is_active") val isActive: Boolean = false,
+    @SerialName("collapse") val collapse: Boolean = false,
+    @SerialName("is_premium") val isPremium: Boolean = false,
+    @SerialName("video_processed") val videoProcessed: Boolean = false,
+
+    @SerialName("is_liked") val isLiked: Int = 0,
+    @SerialName("likes") val likes: Int = 0,
+    @SerialName("dislikes") val dislikes: Int = 0,
+    @SerialName("shares") val shares: Int = 0,
+    @SerialName("fb_shares") val fbShares: Int = 0,
+    @SerialName("views") val views: Int = 0,
+    @SerialName("info_post_config") val infoPostConfig: Int = 0,
+    @SerialName("num_comments") val commentsCount: Int = 0,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("created_on") val createdOn: String? = null,
+    @SerialName("author") val author: String? = null,
+    @SerialName("slug") val slug: String? = null,
+    @SerialName("content") val content: String? = null,
+    @SerialName("custom_link") val customLink: String? = null,
+    @SerialName("button_text") val bottomText: String? = null,
+    @SerialName("locations") val locations: List<LokalLocation> = listOf(),
+    @SerialName("categories") val categories: List<Classified.ClassifiedNudgeList.Category> = listOf(),
+    @SerialName("ugc_categories") val ugcCategories: List<Submission.UgcCategory> = listOf(),
+    @SerialName("tags") val tags: List<Classified.Tag> = listOf(),
+    @SerialName("images") val images: List<ServiceNudgeBanner.ServiceNudgeBannerItem.Image> = listOf(),
+    @SerialName("videos") val videos: List<Video> = listOf(),
+
+    @SerialName("reporter") val reporter: Submission.SubmissionPostDetails.Reporter? = null,
+    @SerialName("submit") val submit: Submit? = null
+
+) : Parcelable, AdListable()
+
+@Serializable
+@Parcelize
+data class FilterPost(
+    override val id: Int,
+    override val type: Int = 18,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("thumb_url") val thumbUrl: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("content") val content: String? = null,
+
+    @SerialName("tags") val tags: List<Classified.Tag> = listOf()
+
+) : Parcelable, AdListable()
+
+@Serializable
+@Parcelize
+data class PollPost(
+    override val id: Int,
+    override val type: Int = 9,
+    override val objectType: Int,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("thumb_url") val thumbUrl: String? = null,
+
+
+    @SerialName("num_comments") val commentsCount: Int = 0,
+    @SerialName("shares") val shares: Int = 0,
+    @SerialName("fb_shares") val fbShares: Int = 0,
+    @SerialName("total_votes") val totalVotes: Int = 0,
+    @SerialName("is_voted") val isVoted: Int = 0,
+    @SerialName("is_ended") val isEnded: Boolean = false,
+
+    @SerialName("end_time") val endTime: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null
+) : Parcelable, AdListable() {
+    @Serializable
+    @Parcelize
+    data class PollOption(
+        @SerialName("id") val id: Int,
+        @SerialName("title") val title: String? = null,
+        @SerialName("thumb_url") val thumbUrl: String? = null,
+        @SerialName("num_votes") val votes: Int = 0,
+        @SerialName("is_correct") val isCorrect: Boolean = false,
+        @SerialName("poll") val poll: Int = 0
+    ) : Parcelable
+
 }
 
 @Serializable
@@ -44,13 +138,51 @@ data class ArticlePost(
     @SerialName("ugc_categories") val ugcCategories: List<Submission.UgcCategory> = listOf(),
     @SerialName("tags") val tags: List<Classified.Tag> = listOf(),
     @SerialName("images") val images: List<ServiceNudgeBanner.ServiceNudgeBannerItem.Image> = listOf(),
-    @SerialName("videos") val videos: List<com.droid.lokalplayground.Video> = listOf(),
+    @SerialName("videos") val videos: List<Video> = listOf(),
 
     @SerialName("reporter") val reporter: Submission.SubmissionPostDetails.Reporter? = null,
     @SerialName("submit") val submit: Submit? = null
 
 ) : Parcelable, AdListable()
 
+@Serializable
+@Parcelize
+data class SharePost(
+    override val id: Int = 5,
+    override val type: Int,
+    override val objectType: Int,
+
+    @SerialName("is_active") val isActive: Boolean = false,
+    @SerialName("collapse") val collapse: Boolean = false,
+    @SerialName("is_premium") val isPremium: Boolean = false,
+    @SerialName("video_processed") val videoProcessed: Boolean = false,
+
+    @SerialName("is_liked") val isLiked: Int = 0,
+    @SerialName("likes") val likes: Int = 0,
+    @SerialName("dislikes") val dislikes: Int = 0,
+    @SerialName("shares") val shares: Int = 0,
+    @SerialName("fb_shares") val fbShares: Int = 0,
+    @SerialName("views") val views: Int = 0,
+    @SerialName("info_post_config") val infoPostConfig: Int = 0,
+    @SerialName("num_comments") val commentsCount: Int = 0,
+
+    @SerialName("title") val title: String? = null,
+    @SerialName("updated_on") val updatedOn: String? = null,
+    @SerialName("created_on") val createdOn: String? = null,
+    @SerialName("author") val author: String? = null,
+    @SerialName("slug") val slug: String? = null,
+    @SerialName("content") val content: String? = null,
+    @SerialName("locations") val locations: List<LokalLocation> = listOf(),
+    @SerialName("categories") val categories: List<Classified.ClassifiedNudgeList.Category> = listOf(),
+    @SerialName("ugc_categories") val ugcCategories: List<Submission.UgcCategory> = listOf(),
+    @SerialName("tags") val tags: List<Classified.Tag> = listOf(),
+    @SerialName("images") val images: List<ServiceNudgeBanner.ServiceNudgeBannerItem.Image> = listOf(),
+    @SerialName("videos") val videos: List<Video> = listOf(),
+
+    @SerialName("reporter") val reporter: Submission.SubmissionPostDetails.Reporter? = null,
+    @SerialName("submit") val submit: Submit? = null
+
+) : Parcelable, AdListable()
 
 @Serializable
 @Parcelize
@@ -65,7 +197,6 @@ data class TagPost(
     @SerialName("tags") val tags: List<Classified.Tag>? = listOf()
 
 ) : Parcelable, AdListable()
-
 
 @Serializable
 @Parcelize
@@ -136,7 +267,6 @@ data class VoiceOfThePeople(
         }
     }
 }
-
 
 @Serializable
 @Parcelize
@@ -226,7 +356,6 @@ data class InfoPost(
     @SerialName("categories") val categories: List<Classified.ClassifiedNudgeList.Category> = listOf()
 
 ) : Parcelable, AdListable()
-
 
 @Serializable
 @Parcelize
@@ -464,9 +593,9 @@ data class Classified(
     @SerialName("other_details") val jobOtherDetails: String? = null,
     @SerialName("job_role") val jobRole: String? = null,
     @SerialName("job_category") val jobCategory: String? = null,
-    @SerialName("openings_count") val jobOpeningCount: Int = -1,
+    @SerialName("openings_count") val jobOpeningCount: Int = -1
 
-    ) : AdListable(), Parcelable {
+) : AdListable(), Parcelable {
 
 
     @Serializable

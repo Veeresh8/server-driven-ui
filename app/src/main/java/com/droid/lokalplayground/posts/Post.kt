@@ -7,73 +7,35 @@ import kotlinx.serialization.Serializable
 @Polymorphic
 @Serializable
 abstract class Post {
-    abstract val lastUpdated: Long
     abstract val id: Long
-    abstract val itemType: ItemType
-
 }
 
 @Serializable
-@SerialName("1")
-data class Article(
-    override val lastUpdated: Long,
+@SerialName("BANNER")
+data class Banner(
     override val id: Long,
-    override val itemType: ItemType = ItemType.ARTICLE,
 
-    val title: String? = null,
-    val description: String? = null,
-    val imageURL: String? = null,
-    val likes: Long? = null,
-    val shares: Long? = null,
-) : Post()
+    @SerialName("banner_meta")
+    val bannerMeta: BannerMeta? = null,
 
+    @SerialName("banner_data")
+    val bannerData: List<BannerData> = listOf()
+) : Post() {
+    @Serializable
+    data class BannerMeta(val interval: Int = 4)
 
-@Serializable
-@SerialName("2")
-data class Video(
-    override val lastUpdated: Long,
-    override val id: Long,
-    override val itemType: ItemType = ItemType.VIDEO,
-
-    val videoURL: String? = null,
-    val thumbnail: String? = null
-
-): Post()
-
-
-@Serializable
-@SerialName("3")
-data class Advert(
-    override val lastUpdated: Long,
-    override val id: Long,
-    override val itemType: ItemType = ItemType.ADVERT,
-
-    val adImage: String? = null,
-    val redirectURL: String? = null
-
-): Post()
-
-
-@Serializable
-@SerialName("4")
-data class JobPost(
-    override val lastUpdated: Long,
-    override val id: Long,
-    override val itemType: ItemType = ItemType.JOBPOST,
-
-    val jobTitle: String? = null,
-    val jobDescription: String? = null,
-    val image: String? = null
-
-): Post()
-
+    @Serializable
+    data class BannerData(
+        @SerialName("image_url")
+        val imageUrl: String? = null,
+        val action: String? = null,
+        @SerialName("is_ad")
+        val isAdvert: Boolean = false
+    )
+}
 
 sealed class HomeState {
     data class Success(val posts: List<Post>): HomeState()
     data class Loading(val message: String): HomeState()
     data class Error(val exception: Throwable): HomeState()
-}
-
-enum class ItemType {
-    ARTICLE, VIDEO, ADVERT, JOBPOST
 }

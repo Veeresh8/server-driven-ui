@@ -1,77 +1,28 @@
 [
-
-
   {
-    "type": 1,
     "id": 1,
-    "lastUpdated": 19020203333,
-    "title": "Hello from the other side!",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "imageURL": "https://picsum.photos/200",
-    "likes": 23,
-    "shares": 100
-  },
-  {
-    "type": 1,
-    "id": 11,
-    "lastUpdated": 190202034343,
-    "title": "Second Hello from the other side!",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book",
-    "imageURL": "https://picsum.photos/200",
-    "likes": 23,
-    "shares": 100
-  },
-
-
-
-  {
-    "type": 2,
-    "id": 2,
-    "lastUpdated": 190202023234,
-    "thumbnail": "https://picsum.photos/200",
-    "videoURL": "https://www.youtube.com/watch?v=FPHpS34xNf0&list=RD14PgWitIbSk&index=9"
-  },
-  {
-    "type": 2,
-    "id": 22,
-    "thumbnail": "https://picsum.photos/200",
-    "lastUpdated": 19020202342,
-    "videoURL": "https://www.youtube.com/watch?v=FPHpS34xNf0&list=RD14PgWitIbSk&index=9"
-  },
-
-
-  {
-    "type": 4,
-    "id": 4,
-    "lastUpdated": 1902123123,
-    "jobTitle": "Programming in C",
-    "image": "https://picsum.photos/200",
-    "jobDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-  },
-  {
-    "type": 4,
-    "id": 44,
-    "lastUpdated": 19024324324,
-    "jobTitle": "Programming in C",
-    "image": "https://picsum.photos/200",
-    "jobDescription": "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
-  },
-
-
-
-  {
-    "type": 3,
-    "id": 3,
-    "lastUpdated": 19020223423,
-    "adImage": "https://picsum.photos/200",
-    "redirectURL": "https://www.google.com/"
-  },
-  {
-    "type": 3,
-    "id": 33,
-    "lastUpdated": 19020212312,
-    "adImage": "https://picsum.photos/200",
-    "redirectURL": "https://www.google.com/"
+    "type": "BANNER",
+    "banner_meta": {
+      "interval": 10
+    },
+    "banner_data": [
+      {
+        "image_url": "https://fakeimg.pl/350x200/ff0000/000000/?text=Trending",
+        "action": "lokal://getlokalapp.com/trending"
+      },
+      {
+        "image_url": "https://fakeimg.pl/350x200/000000/FFFFFF/?text=Jobs",
+        "action": "lokal://getlokalapp.com/jobs"
+      },
+      {
+        "image_url": "https://fakeimg.pl/350x200/000000/FFFFFF/?text=Matrimony",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "image_url": "https://fakeimg.pl/350x200/000000/F000FF/?text=Banaglore",
+        "action": "lokal://getlokalapp.com/tags/bangalore",
+        "is_ad": true
+      }
+    ]
   }
 ]
-

@@ -15,7 +15,7 @@ class PostViewModel @Inject constructor(private val postsUseCase: PostsUseCase):
     val homeState = MutableStateFlow<HomeState>(HomeState.Loading(""))
 
     fun getAllPosts() {
-        homeState.value = HomeState.Loading("Fetching Posts")
+        homeState.value = HomeState.Loading("Fetching Feed")
 
         viewModelScope.launch {
 

@@ -1,34 +1,31 @@
 package com.droid.lokalplayground.posts.views
 
 import android.view.View
-import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import coil.load
 import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.droid.lokalplayground.R
-import com.droid.lokalplayground.posts.Article
-import com.droid.lokalplayground.posts.JobPost
+import com.droid.lokalplayground.posts.Banner
 
-@EpoxyModelClass(layout = R.layout.item_job)
-abstract class JobPostView: EpoxyModelWithHolder<JobPostView.Holder>() {
+@EpoxyModelClass(layout = R.layout.item_banner)
+abstract class BannerItemView: EpoxyModelWithHolder<BannerItemView.Holder>() {
 
     @EpoxyAttribute
-    lateinit var jobPost: JobPost
+    lateinit var bannerData: Banner.BannerData
 
     @EpoxyAttribute (EpoxyAttribute.Option.DoNotHash)
     lateinit var onClickListener: View.OnClickListener
 
     override fun bind(holder: Holder) {
-        holder.ivImage.load(jobPost.image)
-        holder.btnApply.setOnClickListener(onClickListener)
+        holder.ivImage.load(bannerData.imageUrl)
+        holder.rootView.setOnClickListener(onClickListener)
     }
 
     class Holder : KotlinEpoxyHolder() {
         val ivImage by bind<ImageView>(R.id.ivImage)
-        val btnApply by bind<Button>(R.id.btnApply)
-
+        val rootView by bind<ConstraintLayout>(R.id.bannerRoot)
     }
 }
