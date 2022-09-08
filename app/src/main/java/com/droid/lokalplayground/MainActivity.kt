@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.EpoxyVisibilityTracker
 import com.droid.lokalplayground.posts.HomeState
@@ -18,6 +19,8 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var swipeRefreshLayout: SwipeRefreshLayout
 
     private val postViewModel: PostViewModel by viewModels()
 
@@ -37,12 +40,14 @@ class MainActivity : AppCompatActivity() {
                 postViewModel.homeState.collect {
                     when (it) {
                         is HomeState.Error -> {
+                            swipeRefreshLayout.isRefreshing = false
                             println(it)
                         }
                         is HomeState.Loading -> {
-                            println("Loading posts!")
+                            swipeRefreshLayout.toast("Fetching Feed")
                         }
                         is HomeState.Success -> {
+                            swipeRefreshLayout.isRefreshing = false
                             showPosts(it.posts)
                         }
                     }
@@ -58,6 +63,16 @@ class MainActivity : AppCompatActivity() {
             setController(postsUIController)
             epoxyVisibilityTracker.attach(this)
         }
+
+        swipeRefreshLayout = findViewById(R.id.swipeContainer)
+        swipeRefreshLayout.setOnRefreshListener {
+            postViewModel.getAllPosts()
+        }
+
+        swipeRefreshLayout.setColorSchemeResources(android.R.color.holo_blue_bright,
+            android.R.color.holo_green_light,
+            android.R.color.holo_orange_light,
+            android.R.color.holo_red_light);
     }
 
     private fun showPosts(posts: List<Post>) {

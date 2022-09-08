@@ -3,7 +3,7 @@
     "id": 1,
     "type": "BANNER",
     "banner_meta": {
-      "interval": 5
+      "interval": 3
     },
     "banner_data": [
       {
@@ -44,7 +44,8 @@
     "id": 2,
     "type": "QUICK_ACCESS",
     "quick_access_meta": {
-      "title": "Explore"
+      "title": "Explore",
+      "justify": "center"
     },
     "quick_access_data": [
       {
@@ -139,6 +140,40 @@
     ]
   },
   {
+    "id": 5,
+    "type": "QUICK_ACCESS",
+    "quick_access_meta": {
+      "title": "Trending",
+      "justify": "start"
+    },
+    "quick_access_data": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=T&font=noto",
+        "title": "Trending",
+        "action": "lokal://getlokalapp.com/trending"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/64x64/3B185F/FFFFFF?retina=1&text=J&font=noto",
+        "title": "Jobs",
+        "action": "lokal://getlokalapp.com/jobs"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=M&font=noto",
+        "title": "Matrimony",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/64x64/3B185F/FFFFFF?retina=1&text=B&font=noto",
+        "title": "Banaglore",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      }
+    ]
+  },
+  {
     "id": 4,
     "type": "QUICK_NOTIFICATION",
     "quick_notification_meta": {
@@ -148,5 +183,33 @@
       "action": "https://www.google.com/search?q=champions+league",
       "sub_title": "The official site of the world's greatest club competition. Get news, stats and video – plus play Fantasy and Predictor games"
     }
+  },
+  {
+    "id": 6,
+    "type": "FORM",
+    "form_meta": {
+      "title": "Personal Details",
+      "button_text": "Submit"
+    },
+    "form_items": [
+      {
+        "hint": "Enter Number",
+        "type": "number",
+        "text_limit": 10,
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "hint": "Enter Name",
+        "type": "text",
+        "text_limit": 20,
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "hint": "Enter City",
+        "type": "text",
+        "text_limit": 30,
+        "action": "https://www.google.com/search?q=champions+league"
+      }
+    ]
   }
 ]

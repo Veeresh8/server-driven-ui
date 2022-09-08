@@ -3,6 +3,7 @@ package com.droid.lokalplayground.posts
 import com.airbnb.epoxy.AsyncEpoxyController
 import com.droid.lokalplayground.posts.views.banner.bannerView
 import com.droid.lokalplayground.posts.views.carousel.carouselView
+import com.droid.lokalplayground.posts.views.form.formView
 import com.droid.lokalplayground.posts.views.notification.quickNotificationView
 import com.droid.lokalplayground.posts.views.quickAccess.quickAccessView
 import com.droid.lokalplayground.toast
@@ -45,6 +46,12 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                         quickNotificationMeta(it.quickNotificationMeta).onClickListener { model, parentView, clickedView, position ->
                                 clickedView.toast("${model.quickNotificationMeta.action}")
                             }
+                    }
+                }
+                is Form -> {
+                    formView {
+                        id("form_view")
+                        data(it)
                     }
                 }
                 else -> {

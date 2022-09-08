@@ -15,10 +15,15 @@ import kotlinx.coroutines.*
 import javax.inject.Inject
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
+@AndroidEntryPoint
 class BannerView @JvmOverloads constructor(
     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
+    @Inject
+    lateinit var coroutineScope: CoroutineScope
+
+    private var job: Job? = null
     private var interval: Long = 4000
     private var recyclerBannerView: EpoxyRecyclerView
     private var bannerCountView: LinearLayout
@@ -97,7 +102,24 @@ class BannerView @JvmOverloads constructor(
                 .numViewsToShowOnScreen(1.2F)
                 .id("banner carousel")
                 .models(bannerList)
+                .onBind { model, view, position ->
+                    job?.cancel()
+                    job = coroutineScope.launch {
+                        while(isActive) {
+                            delay(interval)
+                            val nextPosition = getNextPosition(bannerList.size)
+                            view?.smoothScrollToPosition(nextPosition)
+                        }
+                    }
+                }
                 .addTo(this)
         }
+    }
+
+    private fun getNextPosition(total: Int): Int {
+        return if (currentPosition == total - 1)
+            0
+        else
+            currentPosition + 1
     }
 }

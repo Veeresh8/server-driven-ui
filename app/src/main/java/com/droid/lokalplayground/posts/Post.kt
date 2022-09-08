@@ -57,7 +57,9 @@ data class QuickAccess(
     @Serializable
     data class QuickAccessMeta(
         @SerialName("title")
-        val title: String? = null
+        val title: String? = null,
+        @SerialName("justify")
+        val layoutJustify: String? = null
     )
 
     @Serializable
@@ -134,6 +136,39 @@ data class QuickNotification(
         val action: String? = null
     )
 }
+
+@Serializable
+@SerialName("FORM")
+data class Form(
+    override val id: Long,
+
+    @SerialName("form_meta")
+    val formMeta: FormMeta? = null,
+    @SerialName("form_items")
+    val formItems: List<FormItem> = listOf()
+
+) : Post() {
+    @Serializable
+    data class FormMeta(
+        @SerialName("title")
+        val title: String? = null,
+        @SerialName("button_text")
+        val buttonText: String? = null,
+    )
+
+    @Serializable
+    data class FormItem(
+        @SerialName("hint")
+        val hint: String? = null,
+        @SerialName("type")
+        val type: String? = null,
+        @SerialName("text_limit")
+        val textLimit: Int = 10,
+        @SerialName("action")
+        val action: String? = null,
+    )
+}
+
 
 sealed class HomeState {
     data class Success(val posts: List<Post>) : HomeState()

@@ -4,11 +4,15 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.TextView
-import androidx.recyclerview.widget.GridLayoutManager
 import com.airbnb.epoxy.*
 import com.droid.lokalplayground.R
 import com.droid.lokalplayground.posts.QuickAccess
 import com.droid.lokalplayground.toast
+import com.google.android.flexbox.FlexDirection
+import com.google.android.flexbox.FlexWrap
+import com.google.android.flexbox.FlexboxLayoutManager
+import com.google.android.flexbox.JustifyContent
+
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
 class QuickAccessView @JvmOverloads constructor(
@@ -18,7 +22,6 @@ class QuickAccessView @JvmOverloads constructor(
     private var recyclerBannerView: EpoxyRecyclerView
     private var tvTitle: TextView
     private var customUIController: CustomUIController
-    private val spanCount = 4
 
     init {
         val view = inflate(context, R.layout.item_quick_access, this)
@@ -27,18 +30,30 @@ class QuickAccessView @JvmOverloads constructor(
 
         customUIController = CustomUIController()
         recyclerBannerView.setController(customUIController)
-
-        val layoutManager = GridLayoutManager(getContext(), spanCount)
-        customUIController.spanCount = spanCount
-        layoutManager.spanSizeLookup = customUIController.spanSizeLookup
-
-        recyclerBannerView.layoutManager = layoutManager
     }
 
     @ModelProp
     fun setData(quickAccess: QuickAccess) {
+        initGrid(quickAccess.quickAccessMeta?.layoutJustify)
         tvTitle.text = quickAccess.quickAccessMeta?.title
         customUIController.addList(quickAccess.quickAccessData)
+    }
+
+    private fun initGrid(layoutJustify: String?) {
+        val layoutManager = FlexboxLayoutManager(context)
+        layoutManager.flexDirection = FlexDirection.ROW
+        when (layoutJustify) {
+            "start" -> {
+                layoutManager.justifyContent = JustifyContent.SPACE_EVENLY
+            }
+            "center" -> {
+                layoutManager.justifyContent = JustifyContent.CENTER
+            }
+            else -> {
+                layoutManager.justifyContent = JustifyContent.FLEX_START
+            }
+        }
+        recyclerBannerView.layoutManager = layoutManager
     }
 
     inner class CustomUIController : AsyncEpoxyController() {

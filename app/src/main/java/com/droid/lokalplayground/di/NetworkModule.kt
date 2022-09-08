@@ -92,6 +92,7 @@ object NetworkModule {
                 subclass(QuickAccess::class, QuickAccess.serializer())
                 subclass(Carousel::class, Carousel.serializer())
                 subclass(QuickNotification::class, QuickNotification.serializer())
+                subclass(Form::class, Form.serializer())
             }
         }
 
