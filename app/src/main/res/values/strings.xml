@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LokalPlayground</string>
+    <string name="view_coroutine_scope">custom_job</string>
 </resources>

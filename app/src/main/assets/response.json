@@ -3,26 +3,150 @@
     "id": 1,
     "type": "BANNER",
     "banner_meta": {
-      "interval": 10
+      "interval": 5
     },
     "banner_data": [
       {
-        "image_url": "https://fakeimg.pl/350x200/ff0000/000000/?text=Trending",
+        "id": 1,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Trending&font=noto",
         "action": "lokal://getlokalapp.com/trending"
       },
       {
-        "image_url": "https://fakeimg.pl/350x200/000000/FFFFFF/?text=Jobs",
+        "id": 2,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
         "action": "lokal://getlokalapp.com/jobs"
       },
       {
-        "image_url": "https://fakeimg.pl/350x200/000000/FFFFFF/?text=Matrimony",
+        "id": 3,
+        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=Matrimony&font=noto",
         "action": "lokal://getlokalapp.com/matrimony"
       },
       {
-        "image_url": "https://fakeimg.pl/350x200/000000/F000FF/?text=Banaglore",
+        "id": 4,
+        "image_url": "https://fakeimg.pl/350x200/FEC260/000000/?text=Banaglore&font=noto",
         "action": "lokal://getlokalapp.com/tags/bangalore",
         "is_ad": true
       }
     ]
+  },
+  {
+    "id": 5,
+    "type": "QUICK_NOTIFICATION",
+    "quick_notification_meta": {
+      "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+      "title": "Hey, check out the new Telsa Model X",
+      "button_text": "Check Now",
+      "action": "https://www.google.com/search?q=telse+car",
+      "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+    }
+  },
+  {
+    "id": 2,
+    "type": "QUICK_ACCESS",
+    "quick_access_meta": {
+      "title": "Explore"
+    },
+    "quick_access_data": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=T&font=noto",
+        "title": "Trending",
+        "action": "lokal://getlokalapp.com/trending"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/64x64/3B185F/FFFFFF?retina=1&text=J&font=noto",
+        "title": "Jobs",
+        "action": "lokal://getlokalapp.com/jobs"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=M&font=noto",
+        "title": "Matrimony",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/64x64/3B185F/FFFFFF?retina=1&text=B&font=noto",
+        "title": "Banaglore",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 5,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=S&font=noto",
+        "title": "Sports",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 6,
+        "image_url": "https://fakeimg.pl/64x64/3B185F/FFFFFF?retina=1&text=N&font=noto",
+        "title": "News",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 7,
+        "image_url": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=F&font=noto",
+        "title": "Faith",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 8,
+        "image_url": "https://fakeimg.pl/64x64/FEC260/000000?retina=1&text=A&font=noto",
+        "title": "See All",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "CAROUSEL",
+    "carousel_meta": {
+      "title": "Bangalore",
+      "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=B&font=noto",
+      "sub_title": "See More"
+    },
+    "carousel_data": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Games&font=noto",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "lokal://getlokalapp.com/trending"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Music&font=noto",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "lokal://getlokalapp.com/jobs"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Pubs&font=noto",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Local&font=noto",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 5,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=City&font=noto",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "QUICK_NOTIFICATION",
+    "quick_notification_meta": {
+      "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=F&font=noto",
+      "title": "MAN UTD vs REAL",
+      "button_text": "Watch Now",
+      "action": "https://www.google.com/search?q=champions+league",
+      "sub_title": "The official site of the world's greatest club competition. Get news, stats and video – plus play Fantasy and Predictor games"
+    }
   }
 ]

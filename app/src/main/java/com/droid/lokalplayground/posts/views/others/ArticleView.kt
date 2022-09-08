@@ -1,4 +1,4 @@
-//package com.droid.lokalplayground.posts.views
+package com.droid.lokalplayground.posts.views.others//package com.droid.lokalplayground.posts.views
 //
 //import android.widget.ImageView
 //import android.widget.TextView

@@ -1,8 +1,7 @@
-package com.droid.lokalplayground.posts.views
+package com.droid.lokalplayground.posts.views.banner
 
 import android.content.Context
 import android.util.AttributeSet
-import android.util.Log
 import android.widget.CheckBox
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -11,16 +10,20 @@ import com.airbnb.epoxy.*
 import com.droid.lokalplayground.R
 import com.droid.lokalplayground.posts.Banner
 import com.droid.lokalplayground.toast
+import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.*
+import javax.inject.Inject
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
 class BannerView @JvmOverloads constructor(
-     context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
+    private var interval: Long = 4000
     private var recyclerBannerView: EpoxyRecyclerView
     private var bannerCountView: LinearLayout
     private var customUIController: CustomUIController
-
+    private var currentPosition: Int = 1
     private val checkBoxList = arrayListOf<CheckBox>()
 
     init {
@@ -36,7 +39,8 @@ class BannerView @JvmOverloads constructor(
     }
 
     @ModelProp
-    fun setCarouselItems(banner: Banner) {
+    fun setData(banner: Banner) {
+        interval = banner.bannerMeta?.getBannerDelay() ?: 4000
         buildCheckBox(banner.bannerData.size)
         customUIController.addList(banner.bannerData)
     }
@@ -59,34 +63,34 @@ class BannerView @JvmOverloads constructor(
     }
 
     private fun enableCheckBox(position: Int) {
-        Log.d("Banner", "enableCheckBox() called with: position = $position")
         checkBoxList.forEach {
             it.isChecked = it.tag as Int == position
         }
     }
 
     inner class CustomUIController : AsyncEpoxyController() {
-        var posts: List<Banner.BannerData> = emptyList()
+        var bannerList: List<Banner.BannerData> = emptyList()
 
         fun addList(list: List<Banner.BannerData>) {
-            posts = list
+            bannerList = list
             requestModelBuild()
         }
 
         override fun buildModels() {
-            val bannerList = posts.map { bannerData ->
+            val bannerList = bannerList.map { bannerData ->
                 BannerItemView_()
-                    .id(bannerData.hashCode())
+                    .id(bannerData.id)
                     .bannerData(bannerData)
                     .onClickListener { model, parentView, clickedView, position ->
                         clickedView.toast("${model.bannerData.action}")
                     }
                     .onVisibilityStateChanged { model, view, visibilityState ->
                         if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
-                           enableCheckBox(posts.indexOf(model.bannerData))
+                            val position = bannerList.indexOf(model.bannerData)
+                            currentPosition = position
+                            enableCheckBox(position)
                         }
                     }
-
             }
 
             CarouselModel_()

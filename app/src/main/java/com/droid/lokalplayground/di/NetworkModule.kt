@@ -89,6 +89,9 @@ object NetworkModule {
         val modules = SerializersModule {
             polymorphic(Post::class) {
                 subclass(Banner::class, Banner.serializer())
+                subclass(QuickAccess::class, QuickAccess.serializer())
+                subclass(Carousel::class, Carousel.serializer())
+                subclass(QuickNotification::class, QuickNotification.serializer())
             }
         }
 

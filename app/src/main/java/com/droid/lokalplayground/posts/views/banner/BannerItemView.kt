@@ -1,4 +1,4 @@
-package com.droid.lokalplayground.posts.views
+package com.droid.lokalplayground.posts.views.banner
 
 import android.view.View
 import android.widget.ImageView
@@ -9,6 +9,7 @@ import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.droid.lokalplayground.R
 import com.droid.lokalplayground.posts.Banner
+import com.droid.lokalplayground.posts.views.KotlinEpoxyHolder
 
 @EpoxyModelClass(layout = R.layout.item_banner)
 abstract class BannerItemView: EpoxyModelWithHolder<BannerItemView.Holder>() {
