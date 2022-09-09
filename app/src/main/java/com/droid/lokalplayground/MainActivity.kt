@@ -62,6 +62,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<EpoxyRecyclerView>(R.id.rvPosts).apply {
             setController(postsUIController)
             epoxyVisibilityTracker.attach(this)
+            postsUIController.attachRecyclerView(this)
         }
 
         swipeRefreshLayout = findViewById(R.id.swipeContainer)
@@ -73,6 +74,7 @@ class MainActivity : AppCompatActivity() {
             android.R.color.holo_green_light,
             android.R.color.holo_orange_light,
             android.R.color.holo_red_light);
+
     }
 
     private fun showPosts(posts: List<Post>) {

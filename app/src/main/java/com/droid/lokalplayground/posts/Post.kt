@@ -136,6 +136,55 @@ data class Form(
     )
 }
 
+@Serializable
+@SerialName("ARTICLE_FULLSCREEN")
+data class ArticleFullScreen(
+    override val id: Long,
+
+    @SerialName("article_meta") val articleMeta: ArticleMeta? = null,
+    @SerialName("article_items") val articleItem: List<ArticleItem> = listOf()
+
+) : Post() {
+
+    @Serializable
+    data class ArticleMeta(
+        @SerialName("title") val title: String? = null,
+    )
+
+    @Serializable
+    data class ArticleItem(
+        @SerialName("id") val id: Long,
+        var isLastItem: Boolean = false,
+        @SerialName("image_url") val imageUrl: String? = null,
+        @SerialName("title") val title: String? = null,
+        @SerialName("content") val content: String? = null,
+        @SerialName("action") val action: String? = null,
+    )
+}
+
+@Serializable
+@SerialName("ARTICLE")
+data class Article(
+    override val id: Long,
+    @SerialName("article_meta") val articleMeta: ArticleMeta? = null,
+    @SerialName("article_items") val articleItem: List<ArticleItem> = listOf()
+
+): Post() {
+    @Serializable
+    data class ArticleMeta(
+        @SerialName("title") val title: String? = null,
+    )
+
+    @Serializable
+    data class ArticleItem(
+        @SerialName("id") val id: Long,
+
+        @SerialName("image_url") val imageUrl: String? = null,
+        @SerialName("title") val title: String? = null,
+        @SerialName("content") val content: String? = null,
+        @SerialName("action") val action: String? = null,
+    )
+}
 
 sealed class HomeState {
     data class Success(val posts: List<Post>) : HomeState()

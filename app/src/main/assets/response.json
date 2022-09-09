@@ -42,27 +42,6 @@
     }
   },
   {
-    "id": 11111,
-    "type": "BANNER",
-    "banner_meta": {
-      "enable_dots": false,
-      "interval": 10
-    },
-    "banner_data": [
-      {
-        "id": 22223,
-        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=Matrimony&font=noto",
-        "action": "lokal://getlokalapp.com/matrimony"
-      },
-      {
-        "id": 433333,
-        "image_url": "https://fakeimg.pl/350x200/FEC260/000000/?text=Banaglore&font=noto",
-        "action": "lokal://getlokalapp.com/tags/bangalore",
-        "is_ad": true
-      }
-    ]
-  },
-  {
     "id": 2,
     "type": "QUICK_ACCESS",
     "quick_access_meta": {
@@ -260,6 +239,122 @@
         "hint": "Enter Name",
         "type": "text",
         "text_limit": 20,
+        "action": "https://www.google.com/search?q=champions+league"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "ARTICLE_FULLSCREEN",
+    "article_meta": {
+      "title": "Trending News"
+    },
+    "article_items": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=R&font=noto",
+        "title": "Check out the new WagonR",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=X&font=noto",
+        "title": "Check out the new WagonX",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Z&font=noto",
+        "title": "Check out the new WagonZ",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=A&font=noto",
+        "title": "Check out the new WagonA",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 5,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=B&font=noto",
+        "title": "Check out the new WagonB",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 6,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=C&font=noto",
+        "title": "Check out the new WagonC",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 7,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=D&font=noto",
+        "title": "Check out the new WagonD",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 8,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=E&font=noto",
+        "title": "Check out the new WagonE",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 9,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=F&font=noto",
+        "title": "Check out the new WagonF",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 10,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=G&font=noto",
+        "title": "Check out the new WagonG",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "ARTICLE",
+    "article_meta": {
+      "title": "Lokal News"
+    },
+    "article_items": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=R&font=noto",
+        "title": "Check out the new WagonR",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=X&font=noto",
+        "title": "Check out the new WagonX",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Z&font=noto",
+        "title": "Check out the new WagonZ",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
+        "action": "https://www.google.com/search?q=champions+league"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=A&font=noto",
+        "title": "Check out the new WagonA",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos",
         "action": "https://www.google.com/search?q=champions+league"
       }
     ]

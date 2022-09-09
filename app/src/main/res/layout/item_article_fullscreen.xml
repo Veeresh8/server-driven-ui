@@ -4,9 +4,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/articleRoot"
         android:layout_width="match_parent"
-        android:layout_margin="8dp"
+        android:layout_margin="16dp"
         app:cardCornerRadius="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
     <LinearLayout
             android:layout_width="match_parent"
@@ -30,7 +30,8 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="32dp"
+                android:textSize="24sp"
                 android:textColor="#000"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -43,14 +44,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:maxLines="4"
+                android:textSize="16sp"
                 android:ellipsize="end"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
                 tools:layout_editor_absoluteY="352dp" />
+
+
     </LinearLayout>
 
 

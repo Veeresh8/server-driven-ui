@@ -93,6 +93,8 @@ object NetworkModule {
                 subclass(Carousel::class, Carousel.serializer())
                 subclass(QuickNotification::class, QuickNotification.serializer())
                 subclass(Form::class, Form.serializer())
+                subclass(ArticleFullScreen::class, ArticleFullScreen.serializer())
+                subclass(Article::class, Article.serializer())
             }
         }
 

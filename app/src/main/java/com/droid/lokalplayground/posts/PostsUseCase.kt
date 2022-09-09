@@ -14,12 +14,15 @@ import javax.inject.Inject
 class PostsUseCase @Inject constructor(
     @ApplicationContext private val context: Context,
     @Type.LokalAPIService val lokalAPIService: LokalAPIService,
+    @Type.PostSerializer val json: Json
 ) {
 
-    suspend fun getPosts(): Result<List<Post>> {
+    fun getPosts(): Result<List<Post>> {
         return try {
-            val postList = lokalAPIService.fetchData("https://feeds.free.beeceptor.com/posts")
-            Result.Success(postList)
+            val result = context.assets.open("response.json").bufferedReader()
+                .use { it.readText() }.trimIndent().replace("\n", "")
+            val posts: List<Post> = json.decodeFromString(result)
+            Result.Success(posts)
         } catch (exception: Exception) {
             Result.Error(exception)
         }
