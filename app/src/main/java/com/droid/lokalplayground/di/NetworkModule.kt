@@ -108,7 +108,7 @@ object NetworkModule {
     @Type.LokalRetrofit
     @Provides
     @Singleton
-    fun providesLokalRetrofit(okHttpClient: OkHttpClient, @Type.LokalSerializer json: Json, contentType: MediaType): Retrofit {
+    fun providesLokalRetrofit(okHttpClient: OkHttpClient, @Type.PostSerializer json: Json, contentType: MediaType): Retrofit {
         return Retrofit.Builder()
             .client(okHttpClient)
             .addConverterFactory(json.asConverterFactory(contentType))

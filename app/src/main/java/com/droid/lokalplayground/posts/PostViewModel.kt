@@ -19,7 +19,7 @@ class PostViewModel @Inject constructor(private val postsUseCase: PostsUseCase):
 
         viewModelScope.launch {
 
-            delay(1000)
+            delay(2000)
 
             when (val result = postsUseCase.getPosts()) {
                 is Result.Success -> {

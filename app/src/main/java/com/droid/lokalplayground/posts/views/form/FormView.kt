@@ -11,6 +11,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.airbnb.epoxy.ModelProp
 import com.airbnb.epoxy.ModelView
+import com.airbnb.epoxy.OnViewRecycled
 import com.droid.lokalplayground.R
 import com.droid.lokalplayground.posts.Form
 import com.google.android.material.textfield.TextInputEditText
@@ -42,6 +43,11 @@ class FormView @JvmOverloads constructor(
             val formData = buildForm(it)
             layoutContainer.addView(formData)
         }
+    }
+
+    @OnViewRecycled
+    fun clear() {
+        layoutContainer.removeAllViews()
     }
 
     private fun buildForm(formItem: Form.FormItem): TextInputLayout {

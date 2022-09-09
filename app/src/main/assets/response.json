@@ -3,6 +3,7 @@
     "id": 1,
     "type": "BANNER",
     "banner_meta": {
+      "enable_dots": true,
       "interval": 3
     },
     "banner_data": [
@@ -39,6 +40,27 @@
       "action": "https://www.google.com/search?q=telse+car",
       "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
     }
+  },
+  {
+    "id": 11111,
+    "type": "BANNER",
+    "banner_meta": {
+      "enable_dots": false,
+      "interval": 10
+    },
+    "banner_data": [
+      {
+        "id": 22223,
+        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=Matrimony&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 433333,
+        "image_url": "https://fakeimg.pl/350x200/FEC260/000000/?text=Banaglore&font=noto",
+        "action": "lokal://getlokalapp.com/tags/bangalore",
+        "is_ad": true
+      }
+    ]
   },
   {
     "id": 2,
@@ -185,6 +207,42 @@
     }
   },
   {
+    "id": 33,
+    "type": "CAROUSEL",
+    "carousel_meta": {
+      "title": "Trending",
+      "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=T&font=noto",
+      "sub_title": "See More"
+    },
+    "carousel_data": [
+      {
+        "id": 1,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Games&font=noto",
+        "action": "lokal://getlokalapp.com/trending"
+      },
+      {
+        "id": 2,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Music&font=noto",
+        "action": "lokal://getlokalapp.com/jobs"
+      },
+      {
+        "id": 3,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Pubs&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 4,
+        "image_url": "https://fakeimg.pl/350x200/2A0944/FFFFFF/?text=Local&font=noto",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      },
+      {
+        "id": 5,
+        "image_url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=City&font=noto",
+        "action": "lokal://getlokalapp.com/tags/bangalore"
+      }
+    ]
+  },
+  {
     "id": 6,
     "type": "FORM",
     "form_meta": {
@@ -193,7 +251,7 @@
     },
     "form_items": [
       {
-        "hint": "Enter Number",
+        "hint": "Phone Number",
         "type": "number",
         "text_limit": 10,
         "action": "https://www.google.com/search?q=champions+league"
@@ -202,12 +260,6 @@
         "hint": "Enter Name",
         "type": "text",
         "text_limit": 20,
-        "action": "https://www.google.com/search?q=champions+league"
-      },
-      {
-        "hint": "Enter City",
-        "type": "text",
-        "text_limit": 30,
         "action": "https://www.google.com/search?q=champions+league"
       }
     ]

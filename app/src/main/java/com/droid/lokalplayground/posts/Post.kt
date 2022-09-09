@@ -15,14 +15,15 @@ abstract class Post {
 data class Banner(
     override val id: Long,
 
-    @SerialName("banner_meta")
-    val bannerMeta: BannerMeta? = null,
+    @SerialName("banner_meta") val bannerMeta: BannerMeta? = null,
 
-    @SerialName("banner_data")
-    val bannerData: List<BannerData> = listOf()
+    @SerialName("banner_data") val bannerData: List<BannerData> = listOf()
 ) : Post() {
     @Serializable
-    data class BannerMeta(val interval: Long = 4) {
+    data class BannerMeta(
+        val interval: Long = 4,
+        @SerialName("enable_dots") val enableDots: Boolean = true,
+    ) {
 
         fun getBannerDelay(): Long {
             return interval * 1000
@@ -31,14 +32,11 @@ data class Banner(
 
     @Serializable
     data class BannerData(
-        @SerialName("id")
-        val id: Long,
+        @SerialName("id") val id: Long,
 
-        @SerialName("image_url")
-        val imageUrl: String? = null,
+        @SerialName("image_url") val imageUrl: String? = null,
         val action: String? = null,
-        @SerialName("is_ad")
-        val isAdvert: Boolean = false
+        @SerialName("is_ad") val isAdvert: Boolean = false
     )
 }
 
@@ -47,32 +45,24 @@ data class Banner(
 data class QuickAccess(
     override val id: Long,
 
-    @SerialName("quick_access_meta")
-    val quickAccessMeta: QuickAccessMeta? = null,
-    @SerialName("quick_access_data")
-    val quickAccessData: List<QuickAccessData> = listOf()
+    @SerialName("quick_access_meta") val quickAccessMeta: QuickAccessMeta? = null,
+    @SerialName("quick_access_data") val quickAccessData: List<QuickAccessData> = listOf()
 
 ) : Post() {
 
     @Serializable
     data class QuickAccessMeta(
-        @SerialName("title")
-        val title: String? = null,
-        @SerialName("justify")
-        val layoutJustify: String? = null
+        @SerialName("title") val title: String? = null,
+        @SerialName("justify") val layoutJustify: String? = null
     )
 
     @Serializable
     data class QuickAccessData(
-        @SerialName("id")
-        val id: Long,
+        @SerialName("id") val id: Long,
 
-        @SerialName("image_url")
-        val imageUrl: String? = null,
-        @SerialName("title")
-        val title: String? = null,
-        @SerialName("action")
-        val action: String? = null
+        @SerialName("image_url") val imageUrl: String? = null,
+        @SerialName("title") val title: String? = null,
+        @SerialName("action") val action: String? = null
     )
 }
 
@@ -81,35 +71,26 @@ data class QuickAccess(
 data class Carousel(
     override val id: Long,
 
-    @SerialName("carousel_meta")
-    val carouselMeta: CarouselMeta? = null,
+    @SerialName("carousel_meta") val carouselMeta: CarouselMeta? = null,
 
-    @SerialName("carousel_data")
-    val carouselData: List<CarouselData> = listOf()
+    @SerialName("carousel_data") val carouselData: List<CarouselData> = listOf()
 
 ) : Post() {
 
     @Serializable
     data class CarouselMeta(
-        @SerialName("title")
-        val title: String? = null,
-        @SerialName("icon")
-        val icon: String? = null,
-        @SerialName("sub_title")
-        val subTitle: String? = null
+        @SerialName("title") val title: String? = null,
+        @SerialName("icon") val icon: String? = null,
+        @SerialName("sub_title") val subTitle: String? = null
     )
 
     @Serializable
     data class CarouselData(
-        @SerialName("id")
-        val id: Long,
+        @SerialName("id") val id: Long,
 
-        @SerialName("image_url")
-        val imageUrl: String? = null,
-        @SerialName("content")
-        val content: String? = null,
-        @SerialName("action")
-        val action: String? = null
+        @SerialName("image_url") val imageUrl: String? = null,
+        @SerialName("content") val content: String? = null,
+        @SerialName("action") val action: String? = null
     )
 }
 
@@ -118,22 +99,16 @@ data class Carousel(
 data class QuickNotification(
     override val id: Long,
 
-    @SerialName("quick_notification_meta")
-    val quickNotificationMeta: QuickNotificationMeta? = null
+    @SerialName("quick_notification_meta") val quickNotificationMeta: QuickNotificationMeta? = null
 ) : Post() {
 
     @Serializable
     data class QuickNotificationMeta(
-        @SerialName("icon")
-        val icon: String? = null,
-        @SerialName("title")
-        val title: String? = null,
-        @SerialName("button_text")
-        val buttonText: String? = null,
-        @SerialName("sub_title")
-        val subTitle: String? = null,
-        @SerialName("action")
-        val action: String? = null
+        @SerialName("icon") val icon: String? = null,
+        @SerialName("title") val title: String? = null,
+        @SerialName("button_text") val buttonText: String? = null,
+        @SerialName("sub_title") val subTitle: String? = null,
+        @SerialName("action") val action: String? = null
     )
 }
 
@@ -142,30 +117,22 @@ data class QuickNotification(
 data class Form(
     override val id: Long,
 
-    @SerialName("form_meta")
-    val formMeta: FormMeta? = null,
-    @SerialName("form_items")
-    val formItems: List<FormItem> = listOf()
+    @SerialName("form_meta") val formMeta: FormMeta? = null,
+    @SerialName("form_items") val formItems: List<FormItem> = listOf()
 
 ) : Post() {
     @Serializable
     data class FormMeta(
-        @SerialName("title")
-        val title: String? = null,
-        @SerialName("button_text")
-        val buttonText: String? = null,
+        @SerialName("title") val title: String? = null,
+        @SerialName("button_text") val buttonText: String? = null,
     )
 
     @Serializable
     data class FormItem(
-        @SerialName("hint")
-        val hint: String? = null,
-        @SerialName("type")
-        val type: String? = null,
-        @SerialName("text_limit")
-        val textLimit: Int = 10,
-        @SerialName("action")
-        val action: String? = null,
+        @SerialName("hint") val hint: String? = null,
+        @SerialName("type") val type: String? = null,
+        @SerialName("text_limit") val textLimit: Int = 10,
+        @SerialName("action") val action: String? = null,
     )
 }
 

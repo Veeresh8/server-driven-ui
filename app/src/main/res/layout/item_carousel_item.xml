@@ -23,30 +23,25 @@
                 app:shapeAppearanceOverlay="@style/roundedImageViewTop"
                 tools:srcCompat="@tools:sample/avatars"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintBottom_toTopOf="@+id/guideline4" />
-
-        <androidx.constraintlayout.widget.Guideline
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/guideline4"
-                app:layout_constraintGuide_percent=".7"
-                android:orientation="horizontal" />
+                app:layout_constraintBottom_toTopOf="@+id/tvContent" />
 
         <TextView
                 android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvContent"
-                android:layout_marginTop="16dp"
                 android:maxLines="3"
                 android:ellipsize="end"
-                app:layout_constraintTop_toBottomOf="@+id/ivImage"
+                android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="16dp" />
+                android:layout_marginBottom="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/ivImage"
+                app:layout_constraintHorizontal_bias="1.0"
+                android:layout_marginTop="8dp" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,9 +9,11 @@ import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.droid.lokalplayground.R
+import com.droid.lokalplayground.gone
 import com.droid.lokalplayground.posts.Carousel
 import com.droid.lokalplayground.posts.QuickAccess
 import com.droid.lokalplayground.posts.views.KotlinEpoxyHolder
+import com.droid.lokalplayground.visible
 
 @EpoxyModelClass(layout = R.layout.item_carousel_item)
 abstract class CarouselItemView: EpoxyModelWithHolder<CarouselItemView.Holder>() {
@@ -24,7 +26,14 @@ abstract class CarouselItemView: EpoxyModelWithHolder<CarouselItemView.Holder>()
 
     override fun bind(holder: Holder) {
         holder.ivImage.load(carouselData.imageUrl)
-        holder.tvContent.text = carouselData.content
+
+        if (!carouselData.content.isNullOrEmpty()) {
+            holder.tvContent.visible()
+            holder.tvContent.text = carouselData.content
+        } else {
+            holder.tvContent.gone()
+        }
+
         holder.rootView.setOnClickListener(onClickListener)
     }
 

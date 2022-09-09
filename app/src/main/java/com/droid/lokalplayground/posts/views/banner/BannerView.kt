@@ -16,15 +16,16 @@ import javax.inject.Inject
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
 @AndroidEntryPoint
-class BannerView @JvmOverloads constructor(
-    context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
+class BannerView @JvmOverloads constructor(context: Context,
+                                           attrs: AttributeSet? = null,
+                                           defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
 
     @Inject
     lateinit var coroutineScope: CoroutineScope
 
     private var job: Job? = null
-    private var interval: Long = 4000
+    private var interval: Long = 0
     private var recyclerBannerView: EpoxyRecyclerView
     private var bannerCountView: LinearLayout
     private var customUIController: CustomUIController
@@ -45,22 +46,38 @@ class BannerView @JvmOverloads constructor(
 
     @ModelProp
     fun setData(banner: Banner) {
-        interval = banner.bannerMeta?.getBannerDelay() ?: 4000
-        buildCheckBox(banner.bannerData.size)
+        interval = banner.bannerMeta?.getBannerDelay() ?: 0
+        buildCheckBox(banner)
         customUIController.addList(banner.bannerData)
     }
 
-    private fun buildCheckBox(size: Int) {
+    @OnViewRecycled
+    fun clear() {
+        job?.cancel()
+        bannerCountView.removeAllViews()
+    }
+
+    private fun buildCheckBox(banner: Banner) {
+        if (banner.bannerMeta?.enableDots == false) {
+            bannerCountView.removeAllViews()
+            return
+        }
+
         val params = LayoutParams(
             LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT
         )
         params.setMargins(0, 0, 12, 0)
 
-        repeat(size) {
+        repeat(banner.bannerData.size) {
             val checkBox = CheckBox(context)
             checkBox.buttonDrawable = getDrawable(context, R.drawable.custom_checkbox)
             checkBox.layoutParams = params
             checkBox.tag = it
+
+            if (it == 0) {
+                checkBox.isChecked = true
+                currentPosition = 0
+            }
 
             bannerCountView.addView(checkBox)
             checkBoxList.add(checkBox)
@@ -103,12 +120,14 @@ class BannerView @JvmOverloads constructor(
                 .id("banner carousel")
                 .models(bannerList)
                 .onBind { model, view, position ->
-                    job?.cancel()
-                    job = coroutineScope.launch {
-                        while(isActive) {
-                            delay(interval)
-                            val nextPosition = getNextPosition(bannerList.size)
-                            view?.smoothScrollToPosition(nextPosition)
+                    if (interval > 0) {
+                        job?.cancel()
+                        job = coroutineScope.launch(Dispatchers.Main.immediate) {
+                            while (isActive) {
+                                delay(interval)
+                                val nextPosition = getNextPosition(bannerList.size)
+                                view?.smoothScrollToPosition(nextPosition)
+                            }
                         }
                     }
                 }
@@ -117,9 +136,11 @@ class BannerView @JvmOverloads constructor(
     }
 
     private fun getNextPosition(total: Int): Int {
-        return if (currentPosition == total - 1)
-            0
+        if (currentPosition == total - 1)
+            currentPosition = 0
         else
-            currentPosition + 1
+            currentPosition += 1
+
+        return currentPosition
     }
 }

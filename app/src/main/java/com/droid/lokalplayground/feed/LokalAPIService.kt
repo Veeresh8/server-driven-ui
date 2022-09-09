@@ -1,7 +1,9 @@
 package com.droid.lokalplayground.feed
 
+import com.droid.lokalplayground.posts.Post
 import retrofit2.http.GET
 import retrofit2.http.Query
+import retrofit2.http.Url
 
 interface LokalAPIService {
 
@@ -16,4 +18,9 @@ interface LokalAPIService {
         @Query("config") config: String = "",
         @Query("microlocation_id") microlocation_id: String = ""
     ): Unit
+
+    @GET
+    suspend fun fetchData(
+      @Url url: String
+    ): List<Post>
 }

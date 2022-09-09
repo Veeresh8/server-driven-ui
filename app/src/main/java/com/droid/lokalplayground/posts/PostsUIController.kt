@@ -1,6 +1,8 @@
 package com.droid.lokalplayground.posts
 
 import com.airbnb.epoxy.AsyncEpoxyController
+import com.droid.lokalplayground.posts.views.banner.BannerView
+import com.droid.lokalplayground.posts.views.banner.BannerViewModel_
 import com.droid.lokalplayground.posts.views.banner.bannerView
 import com.droid.lokalplayground.posts.views.carousel.carouselView
 import com.droid.lokalplayground.posts.views.form.formView
