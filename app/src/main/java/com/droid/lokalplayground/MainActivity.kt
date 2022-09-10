@@ -9,6 +9,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.EpoxyVisibilityTracker
+import com.airbnb.epoxy.stickyheader.StickyHeaderLinearLayoutManager
 import com.droid.lokalplayground.posts.HomeState
 import com.droid.lokalplayground.posts.Post
 import com.droid.lokalplayground.posts.PostViewModel
@@ -60,6 +61,7 @@ class MainActivity : AppCompatActivity() {
         val epoxyVisibilityTracker = EpoxyVisibilityTracker()
 
         findViewById<EpoxyRecyclerView>(R.id.rvPosts).apply {
+            layoutManager = StickyHeaderLinearLayoutManager(this@MainActivity)
             setController(postsUIController)
             epoxyVisibilityTracker.attach(this)
             postsUIController.attachRecyclerView(this)

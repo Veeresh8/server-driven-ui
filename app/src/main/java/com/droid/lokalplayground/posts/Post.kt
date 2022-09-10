@@ -186,6 +186,20 @@ data class Article(
     )
 }
 
+@Serializable
+@SerialName("TOOLBAR")
+data class Toolbar(
+    override val id: Long,
+
+    @SerialName("toolbar_meta") val toolbarMeta: ToolbarMeta? = null,
+): Post() {
+    @Serializable
+    data class ToolbarMeta(
+        @SerialName("title") val title: String? = null
+    )
+}
+
+
 sealed class HomeState {
     data class Success(val posts: List<Post>) : HomeState()
     data class Loading(val message: String) : HomeState()

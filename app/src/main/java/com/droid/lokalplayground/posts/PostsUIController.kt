@@ -5,6 +5,7 @@ import android.view.Gravity
 import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.VisibilityState
+import com.airbnb.epoxy.stickyheader.StickyHeaderCallbacks
 import com.droid.lokalplayground.posts.views.article.articleFullScreenItemView
 import com.droid.lokalplayground.posts.views.article.articleView
 import com.droid.lokalplayground.posts.views.banner.bannerView
@@ -12,6 +13,7 @@ import com.droid.lokalplayground.posts.views.carousel.carouselView
 import com.droid.lokalplayground.posts.views.form.formView
 import com.droid.lokalplayground.posts.views.notification.quickNotificationView
 import com.droid.lokalplayground.posts.views.others.headerView
+import com.droid.lokalplayground.posts.views.others.toolbarView
 import com.droid.lokalplayground.posts.views.quickAccess.quickAccessView
 import com.droid.lokalplayground.toast
 import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
@@ -42,6 +44,12 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
     override fun buildModels() {
         posts.forEach {
             when (it) {
+                is Toolbar -> {
+                    toolbarView {
+                        id("toolbar_view")
+                        title(it.toolbarMeta?.title)
+                    }
+                }
                 is Banner -> {
                     bannerView {
                         id("banner_view")
@@ -105,13 +113,15 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                                     )
 
                                     postsUIController.snapHelper.setSnapListener {
-                                        val snapView = postsUIController.currentRecyclerView.layoutManager?.let { it1 ->
+                                        val snapView =
+                                            postsUIController.currentRecyclerView.layoutManager?.let { it1 ->
                                                 postsUIController.snapHelper.findSnapView(
                                                     it1
                                                 )
                                             }
 
-                                        val articleItem = snapView?.tag as ArticleFullScreen.ArticleItem?
+                                        val articleItem =
+                                            snapView?.tag as ArticleFullScreen.ArticleItem?
 
                                         Log.d("Snap", "Tag: $articleItem")
 

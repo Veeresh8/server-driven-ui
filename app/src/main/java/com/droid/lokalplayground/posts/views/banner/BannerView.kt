@@ -2,6 +2,7 @@ package com.droid.lokalplayground.posts.views.banner
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.widget.CheckBox
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -110,6 +111,7 @@ class BannerView @JvmOverloads constructor(context: Context,
                         if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
                             val position = bannerList.indexOf(model.bannerData)
                             currentPosition = position
+                            Log.d("Banner", "CurrentPosition: $currentPosition")
                             enableCheckBox(position)
                         }
                     }
@@ -126,6 +128,7 @@ class BannerView @JvmOverloads constructor(context: Context,
                             while (isActive) {
                                 delay(interval)
                                 val nextPosition = getNextPosition(bannerList.size)
+                                Log.d("Banner", "NextPosition: $nextPosition")
                                 view?.smoothScrollToPosition(nextPosition)
                             }
                         }
@@ -142,5 +145,9 @@ class BannerView @JvmOverloads constructor(context: Context,
             currentPosition += 1
 
         return currentPosition
+    }
+
+    override fun isSaveEnabled(): Boolean {
+        return true
     }
 }

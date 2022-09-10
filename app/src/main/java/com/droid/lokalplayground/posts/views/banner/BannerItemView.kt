@@ -29,4 +29,8 @@ abstract class BannerItemView: EpoxyModelWithHolder<BannerItemView.Holder>() {
         val ivImage by bind<ImageView>(R.id.ivImage)
         val rootView by bind<ConstraintLayout>(R.id.bannerRoot)
     }
+
+    override fun shouldSaveViewState(): Boolean {
+        return true
+    }
 }

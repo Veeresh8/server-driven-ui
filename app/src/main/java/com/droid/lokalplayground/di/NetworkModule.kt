@@ -95,6 +95,7 @@ object NetworkModule {
                 subclass(Form::class, Form.serializer())
                 subclass(ArticleFullScreen::class, ArticleFullScreen.serializer())
                 subclass(Article::class, Article.serializer())
+                subclass(Toolbar::class, Toolbar.serializer())
             }
         }
 

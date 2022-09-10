@@ -42,4 +42,8 @@ abstract class CarouselItemView: EpoxyModelWithHolder<CarouselItemView.Holder>()
         val rootView by bind<ConstraintLayout>(R.id.carouselRoot)
         val tvContent by bind<TextView>(R.id.tvContent)
     }
+
+    override fun shouldSaveViewState(): Boolean {
+        return true
+    }
 }

@@ -71,4 +71,8 @@ class CarouselView @JvmOverloads constructor(
                 .addTo(this)
         }
     }
+
+    override fun isSaveEnabled(): Boolean {
+        return true
+    }
 }
