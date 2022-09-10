@@ -27,4 +27,13 @@ class PostsUseCase @Inject constructor(
             Result.Error(exception)
         }
     }
+
+    suspend fun getPostsServer(): Result<List<Post>> {
+        return try {
+            val posts = lokalAPIService.fetchData("https://feeds.free.beeceptor.com/posts")
+            Result.Success(posts)
+        } catch (exception: Exception) {
+            Result.Error(exception)
+        }
+    }
 }

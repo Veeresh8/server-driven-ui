@@ -93,4 +93,8 @@ class FormView @JvmOverloads constructor(
         textInputLayout.addView(textInputEditText)
         return textInputLayout
     }
+
+    override fun isSaveEnabled(): Boolean {
+        return true
+    }
 }

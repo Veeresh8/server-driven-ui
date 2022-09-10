@@ -17,10 +17,12 @@ import javax.inject.Inject
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
 @AndroidEntryPoint
-class BannerView @JvmOverloads constructor(context: Context,
-                                           attrs: AttributeSet? = null,
-                                           defStyleAttr: Int = 0
+class BannerView @JvmOverloads constructor(
+    context: Context,
+    attrs: AttributeSet? = null,
+    defStyleAttr: Int = 0
 ) : FrameLayout(context, attrs, defStyleAttr) {
+
 
     @Inject
     lateinit var coroutineScope: CoroutineScope
@@ -33,8 +35,10 @@ class BannerView @JvmOverloads constructor(context: Context,
     private var currentPosition: Int = 1
     private val checkBoxList = arrayListOf<CheckBox>()
 
+    private lateinit var currentBanner: Banner
+
     init {
-        val view = inflate(context, R.layout.item_custom_carousel, this)
+        val view = inflate(context, R.layout.item_banner_view, this)
         recyclerBannerView = view.findViewById(R.id.rvBanner)
         bannerCountView = view.findViewById(R.id.viewBannerCount)
 
@@ -47,6 +51,9 @@ class BannerView @JvmOverloads constructor(context: Context,
 
     @ModelProp
     fun setData(banner: Banner) {
+        bannerCountView.removeAllViews()
+
+        currentBanner = banner
         interval = banner.bannerMeta?.getBannerDelay() ?: 0
         buildCheckBox(banner)
         customUIController.addList(banner.bannerData)
@@ -101,20 +108,39 @@ class BannerView @JvmOverloads constructor(context: Context,
 
         override fun buildModels() {
             val bannerList = bannerList.map { bannerData ->
-                BannerItemView_()
-                    .id(bannerData.id)
-                    .bannerData(bannerData)
-                    .onClickListener { model, parentView, clickedView, position ->
-                        clickedView.toast("${model.bannerData.action}")
-                    }
-                    .onVisibilityStateChanged { model, view, visibilityState ->
-                        if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
-                            val position = bannerList.indexOf(model.bannerData)
-                            currentPosition = position
-                            Log.d("Banner", "CurrentPosition: $currentPosition")
-                            enableCheckBox(position)
+
+                if (currentBanner.bannerMeta?.type == "large") {
+                    BannerLargeItemView_()
+                        .id(bannerData.id)
+                        .bannerData(bannerData)
+                        .onClickListener { model, parentView, clickedView, position ->
+                            clickedView.toast("${model.bannerData.action}")
                         }
-                    }
+                        .onVisibilityStateChanged { model, view, visibilityState ->
+                            if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
+                                val position = bannerList.indexOf(model.bannerData)
+                                currentPosition = position
+                                Log.d("Banner Large", "CurrentPosition: $currentPosition")
+                                enableCheckBox(position)
+                            }
+                        }
+                } else {
+                    BannerItemView_()
+                        .id(bannerData.id)
+                        .bannerData(bannerData)
+                        .onClickListener { model, parentView, clickedView, position ->
+                            clickedView.toast("${model.bannerData.action}")
+                        }
+                        .onVisibilityStateChanged { model, view, visibilityState ->
+                            if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
+                                val position = bannerList.indexOf(model.bannerData)
+                                currentPosition = position
+                                Log.d("Banner", "CurrentPosition: $currentPosition")
+                                enableCheckBox(position)
+                            }
+                        }
+                }
+
             }
 
             CarouselModel_()

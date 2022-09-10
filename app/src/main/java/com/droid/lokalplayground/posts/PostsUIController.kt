@@ -52,7 +52,7 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                 }
                 is Banner -> {
                     bannerView {
-                        id("banner_view")
+                        id("banner_view ${it.id}")
                         data(it)
                     }
                 }
@@ -78,7 +78,7 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                 }
                 is Form -> {
                     formView {
-                        id("form_view")
+                        id("form_view ${it.id}")
                         data(it)
                     }
                 }

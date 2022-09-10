@@ -18,9 +18,6 @@ class PostViewModel @Inject constructor(private val postsUseCase: PostsUseCase):
         homeState.value = HomeState.Loading("Fetching Feed")
 
         viewModelScope.launch {
-
-            delay(2000)
-
             when (val result = postsUseCase.getPosts()) {
                 is Result.Success -> {
                     homeState.value = HomeState.Success(result.data)

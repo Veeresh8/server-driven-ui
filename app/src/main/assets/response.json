@@ -10,6 +10,7 @@
     "id": 1,
     "type": "BANNER",
     "banner_meta": {
+      "type": "normal",
       "enable_dots": true,
       "interval": 3
     },
@@ -34,6 +35,23 @@
         "image_url": "https://fakeimg.pl/350x200/FEC260/000000/?text=Banaglore&font=noto",
         "action": "lokal://getlokalapp.com/tags/bangalore",
         "is_ad": true
+      }
+    ]
+  },
+  {
+    "id": 600,
+    "type": "FORM",
+    "form_meta": {
+      "title": "Aadhar Details",
+      "button_text": "Submit"
+    },
+    "form_items": [
+      {
+        "id": 87787,
+        "hint": "Number",
+        "type": "number",
+        "text_limit": 10,
+        "action": "https://www.google.com"
       }
     ]
   },
@@ -237,12 +255,14 @@
     },
     "form_items": [
       {
+        "id": 878,
         "hint": "Phone Number",
         "type": "number",
         "text_limit": 10,
         "action": "https://www.google.com/search?q=champions+league"
       },
       {
+        "id": 879,
         "hint": "Enter Name",
         "type": "text",
         "text_limit": 20,

@@ -21,8 +21,12 @@ data class Banner(
 ) : Post() {
     @Serializable
     data class BannerMeta(
+        @SerialName("interval")
         val interval: Long = 4,
-        @SerialName("enable_dots") val enableDots: Boolean = true,
+        @SerialName("type")
+        val type: String? = null,
+        @SerialName("enable_dots")
+        val enableDots: Boolean = true,
     ) {
 
         fun getBannerDelay(): Long {
@@ -129,6 +133,8 @@ data class Form(
 
     @Serializable
     data class FormItem(
+        @SerialName("id") val id: Long,
+
         @SerialName("hint") val hint: String? = null,
         @SerialName("type") val type: String? = null,
         @SerialName("text_limit") val textLimit: Int = 10,
@@ -169,7 +175,7 @@ data class Article(
     @SerialName("article_meta") val articleMeta: ArticleMeta? = null,
     @SerialName("article_items") val articleItem: List<ArticleItem> = listOf()
 
-): Post() {
+) : Post() {
     @Serializable
     data class ArticleMeta(
         @SerialName("title") val title: String? = null,
@@ -192,7 +198,7 @@ data class Toolbar(
     override val id: Long,
 
     @SerialName("toolbar_meta") val toolbarMeta: ToolbarMeta? = null,
-): Post() {
+) : Post() {
     @Serializable
     data class ToolbarMeta(
         @SerialName("title") val title: String? = null
