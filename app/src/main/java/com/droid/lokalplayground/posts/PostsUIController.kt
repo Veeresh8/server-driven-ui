@@ -17,6 +17,7 @@ import com.droid.lokalplayground.posts.views.others.toolbarView
 import com.droid.lokalplayground.posts.views.quickAccess.quickAccessView
 import com.droid.lokalplayground.toast
 import com.github.rubensousa.gravitysnaphelper.GravitySnapHelper
+import java.util.UUID
 import javax.inject.Inject
 
 class PostsUIController @Inject constructor() : AsyncEpoxyController() {
@@ -46,7 +47,7 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
             when (it) {
                 is Toolbar -> {
                     toolbarView {
-                        id("toolbar_view")
+                        id("toolbar_view ${it.id}")
                         title(it.toolbarMeta?.title)
                     }
                 }
@@ -58,13 +59,13 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                 }
                 is QuickAccess -> {
                     quickAccessView {
-                        id("quick_access_view")
+                        id("quick_access_view ${it.id}")
                         data(it)
                     }
                 }
                 is Carousel -> {
                     carouselView {
-                        id("carousel_view")
+                        id("carousel_view ${it.id}")
                         data(it)
                     }
                 }
@@ -84,14 +85,14 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                 }
                 is Article -> {
                     articleView {
-                        id("article_view")
+                        id("article_view ${it.id}")
                         data(it)
                     }
                 }
                 is ArticleFullScreen -> {
 
                     headerView {
-                        id("header")
+                        id("header ${UUID.randomUUID()}")
                         title(it.articleMeta?.title)
                     }
 
