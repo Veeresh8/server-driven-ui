@@ -8,6 +8,8 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import com.airbnb.epoxy.*
+import com.airbnb.paris.extensions.layoutHeightDp
+import com.airbnb.paris.extensions.layoutWidthDp
 import com.droid.lokalplayground.R
 import com.droid.lokalplayground.posts.Banner
 import com.droid.lokalplayground.toast
@@ -128,6 +130,7 @@ class BannerView @JvmOverloads constructor(
                     BannerItemView_()
                         .id(bannerData.id)
                         .bannerData(bannerData)
+                        .bannerMeta(currentBanner.bannerMeta)
                         .onClickListener { model, parentView, clickedView, position ->
                             clickedView.toast("${model.bannerData.action}")
                         }
@@ -140,7 +143,6 @@ class BannerView @JvmOverloads constructor(
                             }
                         }
                 }
-
             }
 
             CarouselModel_()

@@ -10,6 +10,34 @@ abstract class Post {
     abstract val id: Long
 }
 
+@Polymorphic
+@Serializable
+abstract class Style {
+    abstract val width: Int
+    abstract val height: Int
+}
+
+@Serializable
+@SerialName("BANNER_STYLE")
+data class BannerStyle(
+    override val width: Int,
+    override val height: Int,
+    @SerialName("scale_type") val scaleType: Int = 6,
+): Style()
+
+@Serializable
+@SerialName("TOOLBAR_STYLE")
+data class ToolbarStyle(
+    override val width: Int,
+    override val height: Int,
+    @SerialName("text_size") val textSize: Int = 16,
+    @SerialName("background_color") val backgroundColor: String,
+    @SerialName("text_color") val textColor: String,
+    @SerialName("gravity") val gravity: String,
+    @SerialName("margin") val margin: List<Int> = arrayListOf(),
+    @SerialName("padding") val padding: List<Int> = arrayListOf(),
+): Style()
+
 @Serializable
 @SerialName("BANNER")
 data class Banner(
@@ -21,14 +49,12 @@ data class Banner(
 ) : Post() {
     @Serializable
     data class BannerMeta(
-        @SerialName("interval")
-        val interval: Long = 4,
-        @SerialName("type")
-        val type: String? = null,
-        @SerialName("enable_dots")
-        val enableDots: Boolean = true,
-    ) {
+        @SerialName("style") val bannerStyle: BannerStyle,
 
+        @SerialName("interval") val interval: Long = 4,
+        @SerialName("type") val type: String? = null,
+        @SerialName("enable_dots") val enableDots: Boolean = true,
+    ) {
         fun getBannerDelay(): Long {
             return interval * 1000
         }
@@ -201,6 +227,7 @@ data class Toolbar(
 ) : Post() {
     @Serializable
     data class ToolbarMeta(
+        @SerialName("style") val toolbarStyle: ToolbarStyle,
         @SerialName("title") val title: String? = null
     )
 }

@@ -6,6 +6,7 @@ import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.VisibilityState
 import com.airbnb.epoxy.stickyheader.StickyHeaderCallbacks
+import com.airbnb.paris.extensions.textViewStyle
 import com.droid.lokalplayground.posts.views.article.articleFullScreenItemView
 import com.droid.lokalplayground.posts.views.article.articleView
 import com.droid.lokalplayground.posts.views.banner.bannerView
@@ -49,6 +50,7 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
                     toolbarView {
                         id("toolbar_view ${it.id}")
                         title(it.toolbarMeta?.title)
+                        toolbarStyle(it.toolbarMeta?.toolbarStyle)
                     }
                 }
                 is Banner -> {

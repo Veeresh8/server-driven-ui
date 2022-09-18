@@ -97,6 +97,11 @@ object NetworkModule {
                 subclass(Article::class, Article.serializer())
                 subclass(Toolbar::class, Toolbar.serializer())
             }
+
+            polymorphic(Style::class) {
+                subclass(BannerStyle::class, BannerStyle.serializer())
+                subclass(ToolbarStyle::class, ToolbarStyle.serializer())
+            }
         }
 
         return Json {

@@ -14,6 +14,7 @@ import com.droid.lokalplayground.toast
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
+import java.util.UUID
 
 @ModelView(autoLayout = ModelView.Size.MATCH_WIDTH_WRAP_HEIGHT)
 class CarouselView @JvmOverloads constructor(

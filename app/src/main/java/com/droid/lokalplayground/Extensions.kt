@@ -14,3 +14,7 @@ fun View.gone() {
 fun View.visible() {
     visibility = View.VISIBLE
 }
+
+fun String.toColorHex(): Int {
+    return android.graphics.Color.parseColor(this)
+}

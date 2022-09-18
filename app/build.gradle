@@ -96,4 +96,7 @@ dependencies {
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
 
     implementation 'com.google.android.flexbox:flexbox:3.0.0'
+
+    implementation 'com.airbnb.android:paris:2.0.0'
+    kapt 'com.airbnb.android:paris-processor:2.0.0'
 }
