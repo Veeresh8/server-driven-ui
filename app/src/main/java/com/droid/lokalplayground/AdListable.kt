@@ -9,8 +9,6 @@ abstract class AdListable {
     abstract val id: Int
     abstract val type: Int
     abstract val objectType: Int
-    //updateOn
-    //createdOn
 }
 
 
