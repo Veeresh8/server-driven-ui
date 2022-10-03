@@ -7,8 +7,6 @@ import com.droid.lokalplayground.feed.LokalAPIService
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import maestro.Maestro
-import maestro_android.MaestroAndroid
 import javax.inject.Inject
 
 class PostsUseCase @Inject constructor(
@@ -17,11 +15,11 @@ class PostsUseCase @Inject constructor(
     @Type.PostSerializer val json: Json
 ) {
 
-    fun getPosts(): Result<List<Post>> {
+    fun getPosts(): Result<List<LokalViewType>> {
         return try {
             val result = context.assets.open("response.json").bufferedReader()
                 .use { it.readText() }.trimIndent().replace("\n", "")
-            val posts: List<Post> = json.decodeFromString(result)
+            val posts: List<LokalViewType> = json.decodeFromString(result)
             Result.Success(posts)
         } catch (exception: Exception) {
             Result.Error(exception)

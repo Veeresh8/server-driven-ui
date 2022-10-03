@@ -1,6 +1,7 @@
 package com.droid.lokalplayground
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
@@ -9,11 +10,7 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.airbnb.epoxy.EpoxyRecyclerView
 import com.airbnb.epoxy.EpoxyVisibilityTracker
-import com.airbnb.epoxy.stickyheader.StickyHeaderLinearLayoutManager
-import com.droid.lokalplayground.posts.HomeState
-import com.droid.lokalplayground.posts.Post
-import com.droid.lokalplayground.posts.PostViewModel
-import com.droid.lokalplayground.posts.PostsUIController
+import com.droid.lokalplayground.posts.*
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -41,6 +38,7 @@ class MainActivity : AppCompatActivity() {
                 postViewModel.homeState.collect {
                     when (it) {
                         is HomeState.Error -> {
+                            Toast.makeText(this@MainActivity, it.exception.message, Toast.LENGTH_SHORT).show()
                             swipeRefreshLayout.isRefreshing = false
                             println(it)
                         }
@@ -61,7 +59,6 @@ class MainActivity : AppCompatActivity() {
         val epoxyVisibilityTracker = EpoxyVisibilityTracker()
 
         findViewById<EpoxyRecyclerView>(R.id.rvPosts).apply {
-            layoutManager = StickyHeaderLinearLayoutManager(this@MainActivity)
             setController(postsUIController)
             epoxyVisibilityTracker.attach(this)
             postsUIController.attachRecyclerView(this)
@@ -79,7 +76,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun showPosts(posts: List<Post>) {
+    private fun showPosts(posts: List<LokalViewType>) {
         postsUIController.addPosts(posts)
     }
 }

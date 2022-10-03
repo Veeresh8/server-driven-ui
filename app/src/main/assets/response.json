@@ -1,24 +1,427 @@
 [
   {
-    "id": 1,
-    "type": "TOOLBAR",
-    "toolbar_meta": {
-      "style": {
-        "type": "TOOLBAR_STYLE",
-        "width": -1,
-        "height": -2,
-        "background_color": "#000000",
-        "text_color": "#FFFFFF",
-        "gravity": "center",
-        "text_size": 24,
-        "padding": [
-          16,
-          16,
-          16,
-          16
+    "type": "CARDS",
+    "config": {
+      "snap_enabled": true
+    },
+    "children": [
+      {
+        "id": 100,
+        "type": "HEADER",
+        "title": "The Lokal App",
+        "style": {
+          "type": "TOOLBAR_STYLE",
+          "width": -1,
+          "height": -2,
+          "text_color": "#000000",
+          "text_style": "bold",
+          "gravity": "start",
+          "text_size": 24,
+          "margin": [
+            16,
+            16,
+            16,
+            32
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "type": "QUICK_NOTIFICATION",
+        "quick_notification_meta": {
+          "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+          "title": "Hey, check out the new Telsa Model X",
+          "button_text": "Check Now",
+          "action": "https://www.google.com/search?q=telse+car",
+          "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+        },
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "TEXT_VIEW",
+            "text": "Mission Mars",
+            "width": -1,
+            "height": -2,
+            "gravity": "start|center",
+            "text_style": "bold",
+            "text_color": "#000000",
+            "text_size": 18,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Content on wealth generation in regional lanaguages is of interest to our users. Source of videos: youtube",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "normal",
+            "text_color": "#000000",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop",
+            "margin": [
+              16,
+              16,
+              16,
+              32
+            ]
+          }
         ]
       },
-      "title": "The Lokal App"
-    }
+      {
+        "id": 4,
+        "type": "QUICK_NOTIFICATION",
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "TEXT_VIEW",
+            "text": "Content on wealth generation in regional lanaguages is of interest to our users. Source of videos: youtube",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "normal",
+            "text_color": "#000000",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop",
+            "margin": [
+              16,
+              16,
+              16,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "type": "QUICK_NOTIFICATION",
+        "quick_notification_meta": {
+          "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+          "title": "Hey, check out the new Telsa Model X",
+          "button_text": "Check Now",
+          "action": "https://www.google.com/search?q=telse+car",
+          "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+        },
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop"
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "type": "QUICK_NOTIFICATION",
+        "quick_notification_meta": {
+          "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+          "title": "Hey, check out the new Telsa Model X",
+          "button_text": "Check Now",
+          "action": "https://www.google.com/search?q=telse+car",
+          "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+        },
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "TEXT_VIEW",
+            "text": "Apple Macbook Pro",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "bold",
+            "text_color": "#000000",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Starts at $999 only, order now!",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "bold",
+            "text_color": "#0000FF",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Logic Pro puts a complete recording and MIDI production studio on your Mac, with everything you need to write, record, edit and mix like never before",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "normal",
+            "text_color": "#808080",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop",
+            "margin": [
+              16,
+              16,
+              16,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "type": "QUICK_NOTIFICATION",
+        "quick_notification_meta": {
+          "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+          "title": "Hey, check out the new Telsa Model X",
+          "button_text": "Check Now",
+          "action": "https://www.google.com/search?q=telse+car",
+          "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+        },
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "TEXT_VIEW",
+            "text": "Check out the new Tesla X",
+            "url": "https://fakeimg.pl/100x100/000000/?text=J",
+            "drawable_padding": 12,
+            "width": -1,
+            "height": -2,
+            "gravity": "start|center",
+            "text_style": "bold",
+            "text_color": "#000000",
+            "text_size": 18,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Content on wealth generation in regional lanaguages is of interest to our users. Source of videos: youtube",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "normal",
+            "text_color": "#808080",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop",
+            "margin": [
+              16,
+              16,
+              16,
+              32
+            ]
+          }
+        ]
+      },
+      {
+        "id": 222,
+        "type": "QUICK_NOTIFICATION",
+        "quick_notification_meta": {
+          "icon": "https://fakeimg.pl/64x64/2A0944/FFFFFF?retina=1&text=TS&font=noto",
+          "title": "Hey, check out the new Telsa Model X",
+          "button_text": "Check Now",
+          "action": "https://www.google.com/search?q=telse+car",
+          "sub_title": "The Tesla Model S is a battery-powered liftback car serving as the flagship model of Tesla, Inc"
+        },
+        "style": {
+          "type": "QUICK_NOTIFICATION_STYLE",
+          "width": -1,
+          "height": -2,
+          "corner_radius": 8,
+          "min_height": 200,
+          "background_color": "#FFFFFF",
+          "margin": [
+            16,
+            16,
+            16,
+            16
+          ]
+        },
+        "children": [
+          {
+            "type": "IMAGE_VIEW",
+            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "width": -1,
+            "height": 700,
+            "corner_radius": 16,
+            "scale_type": "centerCrop",
+            "margin": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Fifa 2022",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "bold",
+            "text_color": "#000000",
+            "text_size": 20,
+            "padding": [
+              16,
+              16,
+              16,
+              0
+            ]
+          },
+          {
+            "type": "TEXT_VIEW",
+            "text": "Content on wealth generation in regional lanaguages is of interest to our users. Source of videos: youtube",
+            "width": -1,
+            "height": -2,
+            "gravity": "start",
+            "text_style": "normal",
+            "text_color": "#000000",
+            "text_size": 16,
+            "padding": [
+              16,
+              16,
+              16,
+              16
+            ]
+          }
+        ]
+      }
+    ]
   }
 ]
+
+

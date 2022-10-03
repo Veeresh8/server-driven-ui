@@ -96,11 +96,22 @@ object NetworkModule {
                 subclass(ArticleFullScreen::class, ArticleFullScreen.serializer())
                 subclass(Article::class, Article.serializer())
                 subclass(Toolbar::class, Toolbar.serializer())
+                subclass(Header::class, Header.serializer())
             }
 
             polymorphic(Style::class) {
                 subclass(BannerStyle::class, BannerStyle.serializer())
                 subclass(ToolbarStyle::class, ToolbarStyle.serializer())
+            }
+
+            polymorphic(LokalView::class) {
+                subclass(LokalTextView::class, LokalTextView.serializer())
+                subclass(LokalImageView::class, LokalImageView.serializer())
+            }
+
+
+            polymorphic(LokalViewType::class) {
+                subclass(CardType::class, CardType.serializer())
             }
         }
 

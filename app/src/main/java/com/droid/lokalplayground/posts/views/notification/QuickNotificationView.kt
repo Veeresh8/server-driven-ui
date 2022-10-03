@@ -1,39 +1,86 @@
 package com.droid.lokalplayground.posts.views.notification//package com.droid.lokalplayground.posts.views
 
 import android.view.View
-import android.widget.Button
-import android.widget.ImageView
-import android.widget.TextView
-import coil.load
+import androidx.cardview.widget.CardView
+import androidx.core.view.children
 import com.airbnb.epoxy.EpoxyAttribute
+import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
+import com.airbnb.paris.extensions.layoutHeight
+import com.airbnb.paris.extensions.layoutWidth
+import com.airbnb.paris.extensions.minHeightDp
+import com.airbnb.paris.extensions.style
 import com.droid.lokalplayground.R
-import com.droid.lokalplayground.posts.QuickNotification
-import com.droid.lokalplayground.posts.views.KotlinEpoxyHolder
+import com.droid.lokalplayground.posts.*
+import com.droid.lokalplayground.setCardBackgroundColor
+import com.droid.lokalplayground.setMargin
+import com.droid.lokalplayground.setRadiusInDp
+import com.google.android.flexbox.FlexboxLayout
 
 @EpoxyModelClass(layout = R.layout.item_notification)
-abstract class QuickNotificationView: EpoxyModelWithHolder<QuickNotificationView.Holder>() {
+abstract class QuickNotificationView : EpoxyModelWithHolder<QuickNotificationView.Holder>() {
 
     @EpoxyAttribute
     lateinit var quickNotificationMeta: QuickNotification.QuickNotificationMeta
 
-    @EpoxyAttribute (EpoxyAttribute.Option.DoNotHash)
+    @EpoxyAttribute
+    lateinit var style: QuickNotification.QuickNotificationStyle
+
+    @EpoxyAttribute
+    lateinit var children: List<LokalView>
+
+    @EpoxyAttribute(EpoxyAttribute.Option.DoNotHash)
     lateinit var onClickListener: View.OnClickListener
 
-    override fun bind(holder: Holder) {
-        holder.tvHeader.text = quickNotificationMeta.title
-        holder.tvSubHeader.text = quickNotificationMeta.subTitle
-        holder.ivImage.load(quickNotificationMeta.icon)
-        holder.btnAction.text = quickNotificationMeta.buttonText
-
-        holder.btnAction.setOnClickListener(onClickListener)
+    override fun unbind(holder: Holder) {
+        super.unbind(holder)
+        holder.container.removeAllViews()
     }
 
-    class Holder : KotlinEpoxyHolder() {
-        val tvHeader by bind<TextView>(R.id.tvHeader)
-        val tvSubHeader by bind<TextView>(R.id.tvSubHeader)
-        val ivImage by bind<ImageView>(R.id.ivImage)
-        val btnAction by bind<Button>(R.id.btnAction)
+    override fun bind(holder: Holder) {
+        with(holder) {
+            children.forEach {
+                when (it) {
+                    is LokalTextView -> {
+                        val textView = buildTextView(root.context, it)
+                        container.addView(textView)
+                    }
+                    is LokalImageView -> {
+                        val imageView = buildImageView(root.context, it)
+                        container.addView(imageView)
+                    }
+                    else -> {
+
+                    }
+                }
+            }
+        }
+
+        if (quickNotificationMeta.isLastItem) {
+            holder.root.tag = null
+        } else {
+            holder.root.tag = quickNotificationMeta
+        }
+    }
+
+    inner class Holder : EpoxyHolder() {
+        lateinit var root: CardView
+        lateinit var container: FlexboxLayout
+
+        override fun bindView(itemView: View) {
+            root = itemView.findViewById(R.id.root)
+            container = itemView.findViewById(R.id.container)
+
+            root.style {
+                layoutWidth(style.width)
+                layoutHeight(style.height)
+                minHeightDp(style.minHeight)
+                root.setMargin(style.margin)
+            }
+
+            root.setCardBackgroundColor(style.backgroundColor.toString())
+            root.setRadiusInDp(style.cornerRadius.toFloat())
+        }
     }
 }
