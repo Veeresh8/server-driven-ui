@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Color
 import android.util.TypedValue
 import android.view.View
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.cardview.widget.CardView
 import com.airbnb.paris.extensions.*
@@ -49,6 +50,26 @@ fun View.setMargin(marginList: List<Int>) {
                     layoutMarginBottomDp(marginList[index])
                 }
             }
+        }
+    }
+}
+
+fun ImageView.setScaleType(value: String) {
+    scaleType = when (value) {
+        "centerCrop" -> {
+            ImageView.ScaleType.CENTER_CROP
+        }
+        "centerInside" -> {
+            ImageView.ScaleType.CENTER_INSIDE
+        }
+        "center" -> {
+            ImageView.ScaleType.CENTER
+        }
+        "fitXY" -> {
+            ImageView.ScaleType.FIT_XY
+        }
+        else -> {
+            ImageView.ScaleType.CENTER_CROP
         }
     }
 }

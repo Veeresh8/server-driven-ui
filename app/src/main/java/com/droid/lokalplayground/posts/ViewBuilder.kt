@@ -3,16 +3,19 @@ package com.droid.lokalplayground.posts
 import android.content.Context
 import android.graphics.Typeface
 import android.graphics.drawable.BitmapDrawable
+import android.os.Build.VERSION.SDK_INT
 import android.view.Gravity
 import android.widget.ImageView
 import android.widget.TextView
 import coil.ImageLoader
+import coil.decode.GifDecoder
+import coil.decode.ImageDecoderDecoder
 import coil.load
 import coil.request.ImageRequest
 import com.airbnb.paris.extensions.*
-import com.droid.lokalplayground.setMargin
-import com.droid.lokalplayground.setPadding
-import com.droid.lokalplayground.toColorHex
+import com.droid.lokalplayground.*
+import com.facebook.shimmer.Shimmer
+import com.facebook.shimmer.ShimmerDrawable
 import com.google.android.material.imageview.ShapeableImageView
 import com.google.android.material.shape.CornerFamily
 
@@ -83,20 +86,7 @@ fun buildImageView(context: Context, lokalImageView: LokalImageView): ShapeableI
         layoutWidth(lokalImageView.width)
         layoutHeight(lokalImageView.height)
 
-        when (lokalImageView.scaleType) {
-            "centerCrop" -> {
-                scaleType(ImageView.ScaleType.CENTER_CROP.ordinal)
-            }
-            "center" -> {
-                scaleType(ImageView.ScaleType.CENTER.ordinal)
-            }
-            "fitXY" -> {
-                scaleType(ImageView.ScaleType.FIT_XY.ordinal)
-            }
-            else -> {
-                scaleType(ImageView.ScaleType.CENTER_CROP.ordinal)
-            }
-        }
+        imageView.setScaleType(lokalImageView.scaleType)
 
         imageView.shapeAppearanceModel = imageView.shapeAppearanceModel
             .toBuilder()
@@ -106,7 +96,9 @@ fun buildImageView(context: Context, lokalImageView: LokalImageView): ShapeableI
         imageView.setMargin(lokalImageView.margin)
     }
 
-    imageView.load(lokalImageView.url)
+    imageView.load(lokalImageView.url, LokalApp.instance.imageLoader) {
+        crossfade(true)
+    }
 
     return imageView
 }

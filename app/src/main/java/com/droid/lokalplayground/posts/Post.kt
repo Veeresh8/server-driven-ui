@@ -26,11 +26,23 @@ abstract class LokalView {
 
 @Polymorphic
 @Serializable
-abstract class LokalViewType {}
+abstract class LokalViewType {
+    abstract val id: Long
+}
+
+@Serializable
+@SerialName("BANNER")
+data class BannerType(
+    override val id: Long,
+    @SerialName("style") val bannerStyle: BannerStyle,
+    @SerialName("banner_meta") val bannerMeta: BannerMeta? = null,
+    @SerialName("banner_data") val bannerData: List<BannerData> = listOf()
+) : LokalViewType()
 
 @Serializable
 @SerialName("CARDS")
 data class CardType(
+    override val id: Long,
     @SerialName("config") val cardConfig: CardConfig? = null,
     @SerialName("children") val children: List<Post>,
 ) : LokalViewType() {
@@ -106,7 +118,8 @@ data class QuickNotification(
 data class BannerStyle(
     override val width: Int,
     override val height: Int,
-    @SerialName("scale_type") val scaleType: Int = 6,
+    @SerialName("scale_type") val scaleType: String,
+    @SerialName("margin") val margin: List<Int> = arrayListOf()
 ) : Style()
 
 
@@ -124,36 +137,24 @@ data class ToolbarStyle(
 ) : Style()
 
 @Serializable
-@SerialName("BANNER")
-data class Banner(
-    override val id: Long,
-
-    @SerialName("banner_meta") val bannerMeta: BannerMeta? = null,
-
-    @SerialName("banner_data") val bannerData: List<BannerData> = listOf()
-) : Post() {
-    @Serializable
-    data class BannerMeta(
-        @SerialName("style") val bannerStyle: BannerStyle,
-
-        @SerialName("interval") val interval: Long = 4,
-        @SerialName("type") val type: String? = null,
-        @SerialName("enable_dots") val enableDots: Boolean = true,
-    ) {
-        fun getBannerDelay(): Long {
-            return interval * 1000
-        }
+data class BannerMeta(
+    @SerialName("interval") val interval: Long = 4,
+    @SerialName("type") val type: String? = null,
+    @SerialName("enable_dots") val enableDots: Boolean = true,
+) {
+    fun getBannerDelay(): Long {
+        return interval * 1000
     }
-
-    @Serializable
-    data class BannerData(
-        @SerialName("id") val id: Long,
-
-        @SerialName("image_url") val imageUrl: String? = null,
-        val action: String? = null,
-        @SerialName("is_ad") val isAdvert: Boolean = false
-    )
 }
+
+@Serializable
+data class BannerData(
+    @SerialName("id") val id: Long,
+
+    @SerialName("image_url") val imageUrl: String? = null,
+    val action: String? = null,
+    @SerialName("is_ad") val isAdvert: Boolean = false
+)
 
 @Serializable
 @SerialName("QUICK_ACCESS")

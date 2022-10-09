@@ -88,7 +88,6 @@ object NetworkModule {
     fun providesPostJsonSerializer(): Json {
         val modules = SerializersModule {
             polymorphic(Post::class) {
-                subclass(Banner::class, Banner.serializer())
                 subclass(QuickAccess::class, QuickAccess.serializer())
                 subclass(Carousel::class, Carousel.serializer())
                 subclass(QuickNotification::class, QuickNotification.serializer())
@@ -112,6 +111,7 @@ object NetworkModule {
 
             polymorphic(LokalViewType::class) {
                 subclass(CardType::class, CardType.serializer())
+                subclass(BannerType::class, BannerType.serializer())
             }
         }
 

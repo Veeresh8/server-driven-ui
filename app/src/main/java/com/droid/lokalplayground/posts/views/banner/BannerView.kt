@@ -8,10 +8,9 @@ import android.widget.FrameLayout
 import android.widget.LinearLayout
 import androidx.appcompat.content.res.AppCompatResources.getDrawable
 import com.airbnb.epoxy.*
-import com.airbnb.paris.extensions.layoutHeightDp
-import com.airbnb.paris.extensions.layoutWidthDp
 import com.droid.lokalplayground.R
-import com.droid.lokalplayground.posts.Banner
+import com.droid.lokalplayground.posts.BannerData
+import com.droid.lokalplayground.posts.BannerType
 import com.droid.lokalplayground.toast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.*
@@ -37,7 +36,7 @@ class BannerView @JvmOverloads constructor(
     private var currentPosition: Int = 1
     private val checkBoxList = arrayListOf<CheckBox>()
 
-    private lateinit var currentBanner: Banner
+    private lateinit var currentBanner: BannerType
 
     init {
         val view = inflate(context, R.layout.item_banner_view, this)
@@ -52,7 +51,7 @@ class BannerView @JvmOverloads constructor(
     }
 
     @ModelProp
-    fun setData(banner: Banner) {
+    fun setData(banner: BannerType) {
         bannerCountView.removeAllViews()
 
         currentBanner = banner
@@ -67,7 +66,7 @@ class BannerView @JvmOverloads constructor(
         bannerCountView.removeAllViews()
     }
 
-    private fun buildCheckBox(banner: Banner) {
+    private fun buildCheckBox(banner: BannerType) {
         if (banner.bannerMeta?.enableDots == false) {
             bannerCountView.removeAllViews()
             return
@@ -101,48 +100,31 @@ class BannerView @JvmOverloads constructor(
     }
 
     inner class CustomUIController : AsyncEpoxyController() {
-        var bannerList: List<Banner.BannerData> = emptyList()
+        var bannerList: List<BannerData> = emptyList()
 
-        fun addList(list: List<Banner.BannerData>) {
+        fun addList(list: List<BannerData>) {
             bannerList = list
             requestModelBuild()
         }
 
         override fun buildModels() {
             val bannerList = bannerList.map { bannerData ->
-
-                if (currentBanner.bannerMeta?.type == "large") {
-                    BannerLargeItemView_()
-                        .id(bannerData.id)
-                        .bannerData(bannerData)
-                        .onClickListener { model, parentView, clickedView, position ->
-                            clickedView.toast("${model.bannerData.action}")
+                BannerItemView_()
+                    .id(bannerData.id)
+                    .bannerStyle(currentBanner.bannerStyle)
+                    .bannerData(bannerData)
+                    .bannerMeta(currentBanner.bannerMeta)
+                    .onClickListener { model, parentView, clickedView, position ->
+                        clickedView.toast("${model.bannerData.action}")
+                    }
+                    .onVisibilityStateChanged { model, view, visibilityState ->
+                        if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
+                            val position = bannerList.indexOf(model.bannerData)
+                            currentPosition = position
+                            Log.d("Banner", "CurrentPosition: $currentPosition")
+                            enableCheckBox(position)
                         }
-                        .onVisibilityStateChanged { model, view, visibilityState ->
-                            if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
-                                val position = bannerList.indexOf(model.bannerData)
-                                currentPosition = position
-                                Log.d("Banner Large", "CurrentPosition: $currentPosition")
-                                enableCheckBox(position)
-                            }
-                        }
-                } else {
-                    BannerItemView_()
-                        .id(bannerData.id)
-                        .bannerData(bannerData)
-                        .bannerMeta(currentBanner.bannerMeta)
-                        .onClickListener { model, parentView, clickedView, position ->
-                            clickedView.toast("${model.bannerData.action}")
-                        }
-                        .onVisibilityStateChanged { model, view, visibilityState ->
-                            if (visibilityState == VisibilityState.FULL_IMPRESSION_VISIBLE) {
-                                val position = bannerList.indexOf(model.bannerData)
-                                currentPosition = position
-                                Log.d("Banner", "CurrentPosition: $currentPosition")
-                                enableCheckBox(position)
-                            }
-                        }
-                }
+                    }
             }
 
             CarouselModel_()

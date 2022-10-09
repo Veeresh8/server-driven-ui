@@ -1,5 +1,6 @@
 [
   {
+    "id": 111,
     "type": "CARDS",
     "config": {
       "snap_enabled": true
@@ -175,7 +176,7 @@
         "children": [
           {
             "type": "IMAGE_VIEW",
-            "url": "https://fakeimg.pl/350x200/3B185F/FFFFFF/?text=Jobs&font=noto",
+            "url": "https://media.giphy.com/media/l0K4k0HAXXwgOhA9G/giphy.gif",
             "width": -1,
             "height": 700,
             "corner_radius": 16,
@@ -419,6 +420,53 @@
             ]
           }
         ]
+      }
+    ]
+  },
+  {
+    "id": 222,
+    "type": "BANNER",
+    "banner_meta": {
+      "enable_dots": true,
+      "interval": 10
+    },
+    "style": {
+      "width": -1,
+      "height": 600,
+      "scale_type": "centerCrop",
+      "margin": [
+        12,
+        0,
+        0,
+        0
+      ]
+    },
+    "banner_data": [
+      {
+        "id": 22224,
+        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=JB&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 22225,
+        "image_url": "https://fakeimg.pl/350x200/FEC260/000000?text=HT&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 22226,
+        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=FA&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 22227,
+        "image_url": "https://fakeimg.pl/350x200/A12568/FFFFFF/?text=AP&font=noto",
+        "action": "lokal://getlokalapp.com/matrimony"
+      },
+      {
+        "id": 433388,
+        "image_url": "https://fakeimg.pl/350x200/FEC260/000000/?text=KA&font=noto",
+        "action": "lokal://getlokalapp.com/tags/bangalore",
+        "is_ad": true
       }
     ]
   }

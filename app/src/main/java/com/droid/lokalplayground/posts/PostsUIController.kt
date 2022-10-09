@@ -3,6 +3,7 @@ package com.droid.lokalplayground.posts
 import android.view.Gravity
 import com.airbnb.epoxy.AsyncEpoxyController
 import com.airbnb.epoxy.EpoxyRecyclerView
+import com.droid.lokalplayground.posts.views.banner.bannerView
 import com.droid.lokalplayground.posts.views.notification.quickNotificationView
 import com.droid.lokalplayground.posts.views.others.headerView
 import com.droid.lokalplayground.toast
@@ -34,6 +35,12 @@ class PostsUIController @Inject constructor() : AsyncEpoxyController() {
     override fun buildModels() {
         items.forEach { itemViewType ->
             when (itemViewType) {
+                is BannerType -> {
+                    bannerView {
+                        id("banner_view: ${itemViewType.id}")
+                        data(itemViewType)
+                    }
+                }
                 is CardType -> {
                     itemViewType.children.forEachIndexed { index, it ->
                         when (it) {

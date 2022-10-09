@@ -8,22 +8,25 @@ import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyHolder
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
-import com.airbnb.paris.ExtendableStyleBuilder
-import com.airbnb.paris.extensions.layoutHeightDp
-import com.airbnb.paris.extensions.layoutWidthDp
-import com.airbnb.paris.extensions.scaleType
-import com.airbnb.paris.extensions.style
+import com.airbnb.paris.extensions.*
 import com.droid.lokalplayground.R
-import com.droid.lokalplayground.posts.Banner
+import com.droid.lokalplayground.posts.BannerData
+import com.droid.lokalplayground.posts.BannerMeta
+import com.droid.lokalplayground.posts.BannerStyle
+import com.droid.lokalplayground.setMargin
+import com.droid.lokalplayground.setScaleType
 
 @EpoxyModelClass(layout = R.layout.item_banner)
 abstract class BannerItemView : EpoxyModelWithHolder<BannerItemView.Holder>() {
 
     @EpoxyAttribute
-    lateinit var bannerData: Banner.BannerData
+    lateinit var bannerData: BannerData
 
     @EpoxyAttribute
-    lateinit var bannerMeta: Banner.BannerMeta
+    lateinit var bannerMeta: BannerMeta
+
+    @EpoxyAttribute
+    lateinit var bannerStyle: BannerStyle
 
     @EpoxyAttribute(EpoxyAttribute.Option.DoNotHash)
     lateinit var onClickListener: View.OnClickListener
@@ -43,16 +46,13 @@ abstract class BannerItemView : EpoxyModelWithHolder<BannerItemView.Holder>() {
             ivImage = itemView.findViewById(R.id.ivImage)
             rootView = itemView.findViewById(R.id.bannerRoot)
 
-            val bannerMeta = this@BannerItemView.bannerMeta
-
             rootView.style {
-                layoutWidthDp(bannerMeta.bannerStyle.width)
-                layoutHeightDp(bannerMeta.bannerStyle.height)
+                layoutWidthDp(bannerStyle.width)
+                layoutHeightDp(bannerStyle.height)
             }
 
-            ivImage.style {
-                scaleType(bannerMeta.bannerStyle.scaleType)
-            }
+            ivImage.setScaleType(bannerStyle.scaleType)
+            rootView.setMargin(bannerStyle.margin)
         }
     }
 
